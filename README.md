@@ -1,57 +1,72 @@
+<!--
 <img src="/assets/images/i18n.png" text-align="center" width = 50%; height=15% >
+-->
 
-# Extracting "Resource files" text for translation with regexes
+# INTERNATIONALIZATION REPOSITORY
 
-## List of REGEXES as per <ins>tecnology</ins> and <ins>file type</ins> 
+The world we live in is multicultural, and global.
+Developing robust applications that can efficiently **handle** several **languages** and their locale-specific metrics depending on **where in the world they are used** is one of those challenges big and "less big" businesses face these days.
 
-| TECHNOLOGY 	| FILE TYPE		| CONTENT 								| REGEX 														| 
-| ----------	|-----------	|--------								|---------														|
-| Android   	|	XML			|	Main								| (?<=>)(.*?)(?=<)												|
-|				|	XML			|	Attributes							| (?<=attribute_name=")(.*?)(?=">?)								|
-| AngularJS		|	JSON		|	Main								| (?<="\s:\s")(.*?)(?=",?)										|
-| Apple iOS 	|	STRINGS		|	Main								| (?<="\s=\s")(.*?)(?=";?)										|
-| CSV			|	CSV			|	Main								| (?<=,,")(.*?)(?=",)											|
-| CakePHP   	|	PO			|	msgid								| (?<=\nmsgid\s")(.*?)(?="\n)									|
-|    			|	PO			|	msgstr								| (?<=\nmsgstr\s")(.*?)(?="\n?)									|
-| DOCS   		|	DOCX		|										| Text extraction performed manually or with stand-alone tools	|
-| Django		|	PO			|	msgid								| (?<=\nmsgid\s")(.*?)(?="\n)									|
-| 				|	PO			|	msgstr								| (?<=\nmsgstr\s")(.*?)(?="\n?)									|
-| Ember Intl	|	JSON		|	Main								| (?<="\s:\s")(.*?)(?="\n?)										|
-| GWT			|	PROPERTIES	|	Main								| (?<=\s=\s)(.*?)(?=\n) 										|
-| Gettext PO	|	PO			|	msgid								| (?<=\nmsgid\s")(.*?)(?="\n)									|
-|    			|	PO			|	msgstr								| (?<=\nmsgstr\s")(.*?)(?="\n?)									|
-| Grails		|	PROPERTIES	|	Main								| (?<=\s=\s)(.*?)(?=\n) 										|
-| I18next		|	JSON		|	Main								| (?<="\s:\s")(.*?)(?=",?)										|
-| IDML			|	IDML		|										| Text extraction performed manually or with stand-alone tools	|
-| INI			|	INI			|	Main								| (?<=\s=\s)(.*?)(?=\n) 										|
-| JSON			|	JSON		|	Main								| (?<="\s:\s")(.*?)(?=",?)										|
-| JAVA SPRING	|	PROPERTIES	|	Main								| (?<=\s=\s)(.*?)(?=\n) 										|
-| JAVA			|	PROPERTIES	|	Main								| (?<=\s=\s)(.*?)(?=\n) 										|
-| PROPERTIES	|	PROPERTIES	|	Main								| (?<=\s=\s)(.*?)(?=\n) 										|
-| PHP Define	|	PHP			|	Main								| (?<=",\s")(.*?)(?=")	 										|
-| Play			|	PROPERTIES	|	Main								| (?<=\s=\s)(.*?)(?=\n) 										|
-| Qt			|	TS			|	Main								| (?<=\<translation\>)(.*?)(?=\</translation\>)					|
-| RESJSON		|	RESJSON		|	Main								| (?<="\s:\s")(.*?)(?=",?)										|
-| RESW			|	RESW		|	Main								| (?<=\<value\>)(.*?)(?=\</value\>)								|
-| RESX			|	RESX		|	Main								| (?<=\<value\>)(.*?)(?=\</value\>)								|
-| React Intl	|	JSON		|	Main								| (?<="\s:\s")(.*?)(?="\n?)										|
-| Ruby on Rails	|	YML			|	Main								| To be fine-tuned												|
-| Symfony		|	YML			|	Main								| To be fine-tuned												|
-| Vaadin		|	PROPERTIES	|	Main								| (?<=\s=\s)(.*?)(?=\n) 										|
-| XLIFF			|	XLF			|	Target tag							| (?<=<target[^>]+>)(.*?)(?=</target>)							|
-| Zend Framework|	INI			|	Main								| (?<=\s=\s)(.*?)(?=\n) 										|
-| 				|	PO			|	msgid								| (?<=\nmsgid\s")(.*?)(?="\n)									|
-| 				|	PO			|	msgstr								| (?<=\nmsgstr\s")(.*?)(?="\n?)									|
+This repository is an attempt to **gather as many internationalization (i18n) resources** and tools as possible in what otherwise is an inifite and messy pool.
 
-## Entities
+This is a humble yet very enthusiastic project.
+The repository will be updated on an ongoing basis.
 
-| ENTITY		 												| REGEX					| 
-| ----------													|--------				|
-|	Block {{placeholders}}										| (\\{\\{(.*?)\\}\\})	|
-|	Block escaped entities \n, \t...							| (\\\\\w)				|
-|	Block % entities \\%										| (\\\\\%)				|
-|	Block {{placeholders}} with % entities %{{placeholders}}	| (\%\\{\\{(.*?)\\}\\})	|
+<!-- ![](https://github.com/agomezmartin/regexl10n/blob/main/assets/images/world_flags.gif)
+-->
 
-## File prepp for translation
 
-**File prep tasks** can be found [HERE](/file_prepp/README.md)
+
+<!--
+		--------------- DROP DOWN MENU EXAMPLE ---------------
+
+<details>
+<summary><strong>LIST OF RESOURCES</strong></summary>
+
+
+1. [Python: ResourceBundle internationalization module](/file_prepp/README.md)
+2. [Resource file text extraction using regex](/text_extraction/README.md)
+3. [File preparation tasks](/file_prepp/README.md)
+
+</details>
+-->
+
+
+
+
+# LIST OF i18n RESOURCES
+<!-- ---------------------------------- -->
+<details>
+<summary><strong>TEXT EXTRACTION</strong></summary>
+
+- [Resource file text extraction using regex](/assets/text_extraction/README.md)
+
+</details>
+<!-- ---------------------------------- -->
+<details>
+<summary><strong>PYTHON</strong></summary>
+
+- [ResourceBundle internationalization module: **Migrating from JAVA**](/assets/python/resourceBundle/README.md)
+
+- [**Gettext**: Multilingual internationalization services](/assets/python/gettext/README.md)
+
+</details>
+<!-- ---------------------------------- -->
+<details>
+<summary><strong>FILE PREPARATION</strong></summary>
+
+- [File preparation tasks](/assets/file_prepp/README.md)
+
+</details>
+<!-- ---------------------------------- -->
+
+
+<!--
+			--------------- LIST OF RESOURCES ---------------
+
+1. [ResourceBundle internationalization module](/file_prepp/README.md)
+2. [Resource file text extraction using regex](/text_extraction/README.md)
+3. [File preparation tasks](/file_prepp/README.md)
+
+-->
+<img src="https://github.com/agomezmartin/regexl10n/blob/main/assets/images/world_flags.gif">
