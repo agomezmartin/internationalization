@@ -45,3 +45,5 @@ print(bundle.get("request"))
 Result:
 <br>
 <img src="/assets/images/string_example.png">
+
+Click [here](https://github.com/agomezmartin/internationalization/blob/main/assets/text_extraction/README.md) for **extracting** properties file content tasks using regexes. 
