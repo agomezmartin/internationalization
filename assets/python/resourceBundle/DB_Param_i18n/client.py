@@ -6,10 +6,10 @@ bundle = ResourceBundle.get_bundle("res/strings", "en")
 position = input(bundle.get("request"))
 
 cursor = dbObject.queryDB(position)
-print("============£=============")
+print("=========================")
 
 for surname, post, sala in cursor:
-    print("Surname: ", surname)
-    print("Job post: ", post)
-    print("Salary: ", sala)
+    print(bundle.get("surname"), surname)
+    print(bundle.get("job"), post)
+    print(bundle.get("salary"), sala)
     print("=========================")
