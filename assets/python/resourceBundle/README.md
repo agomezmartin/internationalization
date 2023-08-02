@@ -19,10 +19,11 @@ Example:
 request=Please, insert a position: 
 ```
 > File: <br>
-strings_en.properties
+strings_en.properties <br>
+File [here](https://github.com/agomezmartin/internationalization/blob/main/assets/python/resourceBundle/DB_Param_i18n/res/strings_en.properties)
 
 > Format: <br>
-**key**=value 
+**key**=value
 
 ## 3. Import module and properties file into an instance variable
 
