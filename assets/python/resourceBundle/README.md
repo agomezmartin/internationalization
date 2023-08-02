@@ -38,6 +38,13 @@ bundle = ResourceBundle.get_bundle("res/strings", "en")
 
 > The example above calls the file called **strings_en.properties** saved in **folder** "res".
 
+The method `.getBundle` allows to call the **properties file** that has our string.
+As the method's arguments we pass it:
+	1. path/file name
+	2 language
+
+If no language is found, it will use the default (a file wihout language).
+
 ## 4. Use the instanced variable to view the string
 
 - Call the **key** from the resource file (strings_en.properties)
