@@ -40,8 +40,9 @@ bundle = ResourceBundle.get_bundle("res/strings", "en")
 
 The method `.getBundle` allows to call the **properties file** that has our string.
 As the method's arguments we pass it:
-	1. path/file name
-	2 language
+
+1. path/file name
+2. language
 
 If no language is found, it will use the default (a file wihout language).
 
