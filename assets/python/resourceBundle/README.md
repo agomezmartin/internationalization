@@ -34,7 +34,6 @@ File [here](https://github.com/agomezmartin/internationalization/blob/main/asset
 import ResourceBundle
 
 bundle = ResourceBundle.get_bundle("res/strings", "en")
-print(bundle.get("request"))
 ```
 
 > The example above calls the file called **strings_en.properties** saved in **folder** "res".
