@@ -25,7 +25,7 @@ File [here](https://github.com/agomezmartin/internationalization/blob/main/asset
 > Format: <br><br>
 	**key**=value
 
-## 3. Import module and properties file into an instance variable
+## 3. Import module to project and properties file into an instance variable
 
 ``` Python
 import ResourceBundle
@@ -34,7 +34,7 @@ bundle = ResourceBundle.get_bundle("res/strings", "en")
 print(bundle.get("request"))
 ```
 
-> The example above calls a file called **strings_en.properties** saved in **folder** res.
+> The example above calls the file called **strings_en.properties** saved in **folder** "res".
 
 ## 4. Use the instanced variable to view the string
 
