@@ -24,8 +24,9 @@
 | INI			|	INI			|	Main								| (?<=\s=\s)(.*?)(?=\n) 										|
 | JSON			|	JSON		|	Main								| (?<="\s:\s")(.*?)(?=",?)										|
 | JAVA SPRING	|	PROPERTIES	|	Main								| (?<=\s=\s)(.*?)(?=\n) 										|
-| JAVA			|	PROPERTIES	|	Main								| (?<==)(.*?)(?=\n) 										|
+| JAVA			|	PROPERTIES	|	Main								| (?<==)(.*?)(?=\n) 											|
 | PROPERTIES	|	PROPERTIES	|	Main								| (?<=\s=\s)(.*?)(?=\n) 										|
+| PYTHON		|	PROPERTIES	|	Main								| (?<==)(.*?)(?=\n) 											|
 | PHP Define	|	PHP			|	Main								| (?<=",\s")(.*?)(?=")	 										|
 | Play			|	PROPERTIES	|	Main								| (?<=\s=\s)(.*?)(?=\n) 										|
 | Qt			|	TS			|	Main								| (?<=\<translation\>)(.*?)(?=\</translation\>)					|
