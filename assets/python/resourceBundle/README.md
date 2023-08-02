@@ -44,3 +44,5 @@ print(bundle.get("request"))
 Result:
 <br>
 <img src="/assets/images/string_example.png">
+
+Actual Python project example [here](DB_Param_i18n/).
