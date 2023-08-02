@@ -1,6 +1,9 @@
 # HOW TO: ResourceBundle in Python
 
 This module has been created in a Java-like fashion to mirror its counterpart Java **Class** ["PropertyResourceBundle"](https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/util/PropertyResourceBundle.html).
+
+It enables to **extract strings visible to the user into properties files** in order NOT to have hard-coded content in an application.
+
 ## 1. Install ResourceBundle in your project
 ```
 # windows
