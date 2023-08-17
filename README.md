@@ -7,7 +7,8 @@
 The world we live in is multicultural, and global.
 Developing robust applications that can efficiently **handle** several **languages** and their locale-specific metrics depending on **where in the world they are used** is one of those challenges big and "less big" businesses face these days.
 
-This repository is an attempt to **gather as many internationalization (i18n) resources** and tools as possible in what otherwise is an inifite and messy pool.
+This repository is an attempt to **gather as many internationalization (i18n) resources** and tools as possible together in a single place. It will provide either original documentation on processes OR reference to resources.
+<!-- in what otherwise is an inifite and messy pool. -->
 
 This is a humble yet very enthusiastic project.
 The repository will be updated on an ongoing basis.
@@ -39,16 +40,23 @@ The repository will be updated on an ongoing basis.
 <details>
 <summary><strong>TEXT EXTRACTION</strong></summary>
 
-- [Resource file text extraction using regex](/assets/text_extraction/README.md)
+- [From **Resource files**](/assets/text_extraction/README.md)
 
 </details>
 <!-- ---------------------------------- -->
 <details>
 <summary><strong>PYTHON</strong></summary>
 
-- [ResourceBundle internationalization module: **Migrating from JAVA**](/assets/python/resourceBundle/README.md)
+- [**ResourceBundle**: A **JAVA-like** approach](/assets/python/resourceBundle/README.md)
 
 - [**Gettext**: Multilingual internationalization services](/assets/python/gettext/README.md)
+
+</details>
+<!-- ---------------------------------- -->
+<details>
+<summary><strong>DJANGO </strong></summary>
+
+- [**Gettext**](/assets/django/README.md)
 
 </details>
 <!-- ---------------------------------- -->
