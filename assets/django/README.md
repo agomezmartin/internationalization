@@ -9,7 +9,7 @@ $  pip install python-gettext
 ```
 ## 2. Mark strings to be translated
 
-[- \.py files](/assets/python/gettext/README.md)
+- [\.py files](/assets/python/gettext/README.md)
  
 - templates (\.html files)
 
@@ -19,8 +19,9 @@ $  pip install python-gettext
 ``` Console
 django-admin makemessages -l es
 ```
-**es** is whichever language strings will be extracted for.
-fr for French, de for German, el for Greek and so on.
+Change **es** to whichever language you want to extract strings for.
+
+FR for French, DE for German, EL for Greek and so on.
 
 This command will create PO files
 
