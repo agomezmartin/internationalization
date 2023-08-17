@@ -23,7 +23,7 @@ Change **es** to whichever language you want to extract strings for.
 
 FR for French, DE for German, EL for Greek and so on.
 
-This command will browse through the entire project looking for any strings **marked for translation** AND create PO files
+This command will browse through the entire project looking for any strings **marked for translation** AND extract them into language-specific **PO files**.
 
 ## 5. Translate PO files
 
