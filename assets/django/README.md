@@ -38,8 +38,7 @@ django-admin compilemessages
 
 
 
-
-
+<!-- 
 
 
 
@@ -60,3 +59,4 @@ django-admin compilemessages
 
 This entry has been summarized from [Phrase](https://phrase.com/blog/posts/translate-python-gnu-gettext/)
 
+-->
