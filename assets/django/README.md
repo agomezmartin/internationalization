@@ -4,7 +4,7 @@ This class-based API is the recommended way of internationalizing Python applica
 
 ## 1. Install Gettext in your project
 
-```Console
+``` Linux
 $  pip install python-gettext
 ```
 ## 2. Mark strings for translation
@@ -18,7 +18,7 @@ $  pip install python-gettext
 ## 4. Extract strings
 
 In your **app**, run the following command:
-``` Console
+``` Linux
 $ django-admin makemessages -l es
 ```
 Change **es** to whichever language you want to extract strings for.
@@ -33,7 +33,7 @@ This command will browse through the entire project looking for any strings **ma
 
 PO files need to be compiled for the machine to read.
 The following command will compile them and convert them to machine-readable MO files:
-``` Console
+``` Linux
 $ django-admin compilemessages
 ```
 ## 7. Load translations and set language-specific code in template:
