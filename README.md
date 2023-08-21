@@ -56,9 +56,9 @@ The repository will be updated on an ongoing basis.
 <details>
 <summary><strong>DJANGO </strong></summary>
 
-- [**Gettext**: extract and collapse strings for translation](/assets/django/README.md)
-- [**Templates: mark strings for translation**](/assets/django/README.md)
-- [**Templates: interpolation**](/assets/django/README.md)
+- [**Gettext**: extract and compile strings for translation](/assets/django/README.md)
+- [**Templates**: mark strings for translation](/assets/django/README.md)
+- [**Templates**: interpolation](/assets/django/templates_interpolation/README.md)
 
 </details>
 <!-- ---------------------------------- -->

@@ -7,7 +7,7 @@ This class-based API is the recommended way of internationalizing Python applica
 ```
 $  pip install python-gettext
 ```
-## 2. Mark strings to be translated
+## 2. Mark strings for translation
 
 - [\.py files](/assets/python/gettext/README.md)
  
@@ -15,7 +15,9 @@ $  pip install python-gettext
 
 ## 3. Create a "LOCALE" **folder** inside your Django **app**
 
-## 4. In your **app**, run the following command: 
+## 4. Extract strings
+
+In your **app**, run the following command:
 ``` Console
 django-admin makemessages -l es
 ```
@@ -27,11 +29,14 @@ This command will browse through the entire project looking for any strings **ma
 
 ## 5. Translate PO files
 
-## 6. Compile PO files with the following command:
+## 6. Compile PO files
+
+PO files need to be compiled for the machine to read.
+The following command will compile them and convert them to machine-readable MO files:
 ``` Console
 django-admin compilemessages
 ```
-## 7. Load translations and select language-code in template:
+## 7. Load translations and set language-specific code in template:
 ``` HTML
 <!DOCTYPE html>
 {% load i18n %}

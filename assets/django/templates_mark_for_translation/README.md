@@ -1,33 +1,39 @@
-# HOW TO: i18n with Django
+# HOW TO: Mark Django templates for translation
 
-This class-based API is the recommended way of internationalizing Python applications. 
+## 1. Mark strings
 
-## 1. Install Gettext in your project
+In order to have string exported for translation, they need to be marked following the format **{% translate "..." %}**. Any content between the double quotes will be exported for translation into PO files.
 
+Example:
+``` HTML
+<h3 class="text-center">{% translate "Please, select:" %}</h3>
 ```
-$  pip install python-gettext
+
+Another option is **using variables** within the markdown to contain translations:
+
+Same example using a variable:
+``` HTML
+{% translate "Please, select:" as title_header %}
+
+<h3 class="text-center">{{title_header}}</h3>
 ```
-## 2. Mark strings to be translated
 
-- [\.py files](/assets/python/gettext/README.md)
- 
-- templates (\.html files)
 
-## 3. Create a "LOCALE" **folder** inside your Django **app**
+## 2. Prepare the template to load translations and select language
 
-## 4. In your **app**, run the following command: 
-``` Console
-django-admin makemessages -l es
-```
-Change **es** to whichever language you want to extract strings for.
 
-FR for French, DE for German, EL for Greek and so on.
+``` HTML
+<!DOCTYPE html>
+{% load i18n %}
+{% language 'es' %}
 
-This command will browse through the entire project looking for any strings **marked for translation** AND extract them into language-specific **PO files**.
-
-## 5. Translate PO files
-
-## 6. Compile PO files with the following command:
-``` Console
-django-admin compilemessages
+<html>
+<head>
+...
+</head>
+<body>
+...
+</body>
+</html>
+{% endlanguage %}
 ```

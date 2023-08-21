@@ -1,33 +1,22 @@
-# HOW TO: i18n with Django
+# HOW TO:
 
-This class-based API is the recommended way of internationalizing Python applications. 
-
-## 1. Install Gettext in your project
+## 1.
+```
 
 ```
-$  pip install python-gettext
-```
-## 2. Mark strings to be translated
+## 2.
+-
 
-- [\.py files](/assets/python/gettext/README.md)
- 
-- templates (\.html files)
+-
+## 3.
 
-## 3. Create a "LOCALE" **folder** inside your Django **app**
-
-## 4. In your **app**, run the following command: 
+## 4.
 ``` Console
-django-admin makemessages -l es
+
 ```
-Change **es** to whichever language you want to extract strings for.
+## 5.
 
-FR for French, DE for German, EL for Greek and so on.
-
-This command will browse through the entire project looking for any strings **marked for translation** AND extract them into language-specific **PO files**.
-
-## 5. Translate PO files
-
-## 6. Compile PO files with the following command:
+## 6.
 ``` Console
-django-admin compilemessages
+
 ```
