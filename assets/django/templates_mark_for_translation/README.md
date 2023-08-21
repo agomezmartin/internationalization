@@ -11,7 +11,7 @@ $  pip install python-gettext
 
 - [\.py files](/assets/python/gettext/README.md)
  
-- [templates (\.html files)](/assets/django/templates_mark_for_translation/README.md)
+- templates (\.html files)
 
 ## 3. Create a "LOCALE" **folder** inside your Django **app**
 
@@ -30,20 +30,4 @@ This command will browse through the entire project looking for any strings **ma
 ## 6. Compile PO files with the following command:
 ``` Console
 django-admin compilemessages
-```
-## 7. Load translations and select language-code in template:
-``` HTML
-<!DOCTYPE html>
-{% load i18n %}
-{% language 'es' %}
-
-<html>
-<head>
-...
-</head>
-<body>
-...
-</body>
-</html>
-{% endlanguage %}
 ```
