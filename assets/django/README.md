@@ -9,9 +9,9 @@ $  pip install python-gettext
 ```
 ## 2. Mark strings for translation
 
-- [\.py files](/assets/python/gettext/README.md)
+- [Python files (\.py files)](/assets/python/gettext/README.md)
  
-- [templates (\.html files)](/assets/django/templates_mark_for_translation/README.md)
+- [Django templates (\.html files)](/assets/django/templates_mark_for_translation/README.md)
 
 ## 3. Create a "LOCALE" **folder** inside your Django **app**
 
