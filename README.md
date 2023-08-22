@@ -69,15 +69,6 @@ The repository will be updated on an ongoing basis.
 </details>
 <!-- ---------------------------------- -->
 <details>
-<summary><strong>DJANGO </strong></summary>
-
-- [**Gettext**: extract and compile strings for translation](/assets/django/README.md)
-- [**Templates**: mark strings for translation](/assets/django/README.md)
-- [**Templates**: interpolation](/assets/django/templates_interpolation/README.md)
-
-</details>
-<!-- ---------------------------------- -->
-<details>
 <summary><strong>FILE PREPARATION</strong></summary>
 
 - [File preparation tasks](/assets/file_prepp/README.md)
