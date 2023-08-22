@@ -48,8 +48,23 @@ The repository will be updated on an ongoing basis.
 <summary><strong>PYTHON</strong></summary>
 
 - [**ResourceBundle**: A **JAVA-like** approach](/assets/python/resourceBundle/README.md)
-
 - [**Gettext**: Multilingual internationalization services](/assets/python/gettext/README.md)
+
+</details>
+<!-- ---------------------------------- -->
+<details>
+<summary><strong>DJANGO </strong></summary>
+
+- [**Gettext**: extract and compile strings for translation](/assets/django/README.md)
+- [**Templates**: mark strings for translation](/assets/django/templates_mark_for_translation/README.md)
+- [**Templates**: interpolation](/assets/django/templates_interpolation/README.md)
+
+</details>
+<!-- ---------------------------------- -->
+<details>
+<summary><strong>JAVA</strong></summary>
+
+- [**ResourceBundle**](/assets/java/resourceBundle/README.md)
 
 </details>
 <!-- ---------------------------------- -->
