@@ -101,15 +101,8 @@ Final folder structure should look as follows:
 
 <img src="https://github.com/agomezmartin/regexl10n/blob/main/assets/images/gettext_folder_structure_3.png">
 
+## 8. Install and select a language
 
-
-
-<img src="https://github.com/agomezmartin/regexl10n/blob/main/assets/images/gettext_folder_structure_3.png">
-
-<img src="https://github.com/agomezmartin/regexl10n/blob/main/assets/images/gettext_folder_structure.png">
-
-<img src="https://github.com/agomezmartin/regexl10n/blob/main/assets/images/gettext_folder_structure.png">
-
+Link [here](/assets/python/select_lang/README.md)
 
 This entry has been summarized from [Phrase](https://phrase.com/blog/posts/translate-python-gnu-gettext/)
-

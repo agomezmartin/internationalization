@@ -56,6 +56,6 @@ Result:
 <br>
 <img src="/assets/images/string_example.png">
 
-Actual Python project can be found [here](https://github.com/agomezmartin/internationalization/tree/main/assets/python/resourceBundle/DB_Param_i18n).
+Actual Python project can be found [here](https://github.com/agomezmartin/regexl10n/tree/main/assets/_projects/django/DB_Param_i18n).
 
 Click [here](https://github.com/agomezmartin/internationalization/blob/main/assets/text_extraction/README.md) for **extracting** properties file content tasks using regexes. 

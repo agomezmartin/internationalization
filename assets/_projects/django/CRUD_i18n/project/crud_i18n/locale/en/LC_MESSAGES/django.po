@@ -1,0 +1,97 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-08-24 19:54+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: templates/index.html:10 templates/index_API_language.html:11
+#: templates/index_DB_language.html:11
+msgid "CRUD"
+msgstr ""
+
+#: templates/index.html:11 templates/index_API_language.html:12
+#: templates/index_DB_language.html:12
+msgid "Please, select a language"
+msgstr ""
+
+#: templates/index.html:12 templates/index_API_language.html:13
+#: templates/index_DB_language.html:13
+msgid "Departments"
+msgstr ""
+
+#: templates/index.html:13 templates/index_API_language.html:14
+#: templates/index_DB_language.html:14
+msgid "Number"
+msgstr ""
+
+#: templates/index.html:14 templates/index_API_language.html:15
+#: templates/index_DB_language.html:15
+msgid "Name"
+msgstr ""
+
+#: templates/index.html:15 templates/index_API_language.html:16
+#: templates/index_DB_language.html:16
+msgid "Location"
+msgstr ""
+
+#: templates/index.html:16 templates/index_API_language.html:17
+#: templates/index_DB_language.html:17
+msgid "Department Number"
+msgstr ""
+
+#: templates/index.html:17 templates/index_API_language.html:18
+#: templates/index_DB_language.html:18
+msgid "Insert"
+msgstr ""
+
+#: templates/index.html:18 templates/index_API_language.html:19
+#: templates/index_DB_language.html:19
+msgid "Modify"
+msgstr ""
+
+#: templates/index.html:19 templates/index_API_language.html:20
+#: templates/index_DB_language.html:20
+msgid "Delete"
+msgstr ""
+
+#: templates/index.html:20 templates/index_API_language.html:21
+#: templates/index_DB_language.html:21
+msgid "View departments"
+msgstr ""
+
+#: templates/index.html:21 templates/index_API_language.html:22
+#: templates/index_DB_language.html:22
+msgid "The departement has been saved correctly"
+msgstr ""
+
+#: templates/index.html:22 templates/index_API_language.html:23
+#: templates/index_DB_language.html:23
+msgid "The departement has been updated correctly"
+msgstr ""
+
+#: templates/index.html:23 templates/index_API_language.html:24
+#: templates/index_DB_language.html:24
+msgid "The departement has been deleted correctly"
+msgstr ""
+
+#: views.py:52
+msgid "English"
+msgstr ""
+
+#: views.py:52
+msgid "Spanish"
+msgstr ""

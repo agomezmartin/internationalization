@@ -58,6 +58,11 @@ The repository will be updated on an ongoing basis.
 - [**Gettext**: extract and compile strings for translation](/assets/django/README.md)
 - [**Templates**: mark strings for translation](/assets/django/templates_mark_for_translation/README.md)
 - [**Templates**: interpolation](/assets/django/templates_interpolation/README.md)
+- [**Allowing Users to Switch Languages**](https://testdriven.io/blog/multiple-languages-in-django/#allowing-users-to-switch-languages)
+
+
+
+
 
 </details>
 <!-- ---------------------------------- -->
