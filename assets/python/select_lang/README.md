@@ -54,5 +54,5 @@ _ = languages[0].gettext
 _ = languages[1].gettext
 ```
 
-Project [example](https://github.com/agomezmartin/internationalization/blob/main/assets/_projects/django/MySQLProcedures_i18n_gettext/client.py)
+Project [example](https://github.com/agomezmartin/internationalization/blob/main/assets/_projects/django/MySQLProcedures_i18n_gettext/client.py).
 This entry has been summarized from [Phrase](https://phrase.com/blog/posts/translate-python-gnu-gettext/)
