@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+{% load i18n %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- STRINGS declarations to be used as VARIABLES throughout the form -->
+    {% translate "Registry" as the_title %}
+    {% translate "Client data" as client_data %}
+    {% translate "Name" as name %}
+    {% translate "First Surname" as first_surname %}
+    {% translate "Second Surname" as second_surname %}
+    {% translate "Second Surname" as second_surname %}
+    {% translate "Address details" as address_details %}
+    {% translate "Address" as address %}
+    {% translate "Second Surname" as second_surname %}
+    {% translate "Choose:" as choose %}
+    {% translate "City" as city_string %}
+    {% translate "Gender details" as gender_details %}
+    {% translate "Male" as male_check %}
+    {% translate "Female" as female_check %}
+    {% translate "Prefers not to say" as na_check %}
+    {% translate "IT details" as it_details %}
+    {% translate "Please, select your Operating System(s):" as select_os %}
+    {% translate "Windows XP" as Windows_XP_os %}
+    {% translate "WindowsXP" as WindowsXP_os %}
+    {% translate "W 2000" as W_2000_os %}
+    {% translate "W2000" as W2000_os %}
+    {% translate "Linux" as linux %}
+    {% translate "Leave a comment here" as leave_comment %}
+    {% translate "Comments:" as comments %}
+    {% translate "Send" as send %}
+    {% translate "Go back" as return %}
+
+    <title>{{the_title}}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+<body>
+
+<!-- ---------------------- MODAL ---------------------- -->
+<div class="modal modal-signin position-static d-block py-5" tabindex="-1" role="dialog" id="modalSignin">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content rounded-4 shadow">
+      <div class="modal-header p-5 pb-4 border-bottom-0">
+        <!-- <h1 class="modal-title fs-5" >Modal title</h1> -->
+        <h1 class="fw-bold mb-0 fs-2">{{client_data}}</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body p-5 pt-0">
+      <!-- ---------------------- FORM ---------------------- -->
+      <form method="POST" action="sendForm">
+      {% csrf_token %}
+          <!-- --------- PERSONAL DETAILS --------- -->
+          {% if personalDetails %}
+          <div class="form-floating mb-3">
+            <input readonly value="{{personalDetails.0}}" type="text" name="txtName" class="form-control rounded-3" id="floatingName" placeholder="{{personalDetails.0}}<">
+            <label for="floatingName">{{name}}</label>
+          </div>
+          {% endif %}
+          {% if personalDetails %}
+          <div class="form-floating mb-3">
+            <input readonly value="{{personalDetails.1}}" type="text" name="txtFirstSurname" class="form-control rounded-3" id="floatingFirstSurname" placeholder="{{personalDetails.1}}">
+            <label for="floatingFirstSurname">{{first_surname}}</label>
+          </div>
+          {% endif %}
+          {% if personalDetails %}
+          <div class="form-floating mb-3">
+            <input readonly value="{{personalDetails.2}}" type="text" name="txtSecondSurname" class="form-control rounded-3" id="floatingSecondSurname" placeholder="{{personalDetails.2}}">
+            <label for="floatingSecondSurname">{{second_surname}}</label>
+          </div>
+          {% endif %}
+
+          <!-- --------- ADDRESS DETAILS --------- -->
+          <fieldset>
+              <legend>{{address_details}}</legend>
+          <div class="form-floating mb-3">
+            <input type="text" name="txtAddress" class="form-control rounded-3" id="floatingAddress" placeholder="{{personalDetails.2}}">
+            <label for="floatingAddress">{{address}}</label>
+          </div>
+
+          <div class="form-floating mb-3">
+
+              <select id="floatingCity"  name="slctCity" class="form-select form-select-lg mb-3" aria-label=".form-select-lg">
+                  <option selected>{{choose}}</option>
+                  {% for city in citylist %}
+                  <option value="{{city}}">{{city}}</option>
+                  {% endfor %}
+              </select>
+            <label for="floatingCity">{{city_string}}</label>
+          </div>
+          </fieldset>
+
+          <!-- --------- GENDER DETAILS --------- -->
+          <fieldset>
+              <legend>{{gender_details}}</legend>
+
+              <div class="form-floating mb-3">
+                  <div class="form-check-inline">
+                      <input class="form-check-input" type="radio" name="chkGender" value="{{male_check}}" id="chkMale">
+                      <label class="form-check-label" for="chkMale">
+                          {{male_check}}
+                      </label>
+                  </div>
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="chkGender" value="{{female_check}}" id="chkFemale">
+                      <label class="form-check-label" for="chkFemale">
+                          {{female_check}}
+                      </label>
+                  </div>
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="chkGender" value="{{na_check}}" id="chkNA">
+                      <label class="form-check-label" for="chkNA">
+                          {{na_check}}
+                      </label>
+                  </div>
+              </div>
+          </fieldset>
+
+          <!-- --------- IT DETAILS --------- -->
+          <fieldset>
+              <legend>{{it_details}}</legend>
+
+              <div class="form-floating mb-3">
+
+                  <h6>{{select_os}}</h6>
+
+                  <div class="form-check form-check-inline">
+                      <input name="chkOS" class="form-check-input" type="checkbox" id="WindowsXP" value="{{WindowsXP_os}}">
+                      <label class="form-check-label" for="WindowsXP">{{Windows_XP_os}}</label>
+                  </div>
+
+                  <div class="form-check form-check-inline">
+                      <input name="chkOS" class="form-check-input" type="checkbox" id="W2000" value="{{W2000_os}}">
+                      <label class="form-check-label" for="W2000">{{W_2000_os}}</label>
+                  </div>
+
+                  <div class="form-check form-check-inline">
+                      <input name="chkOS" class="form-check-input" type="checkbox" id="linux" value="{{linux}}">
+                      <label class="form-check-label" for="linux">{{linux}}</label>
+                  </div>
+              </div>
+          </fieldset>
+
+          <!-- --------- COMMENTS --------- -->
+          <fieldset>
+
+              <div class="form-floating mb-3">
+
+                  <div class="form-floating">
+                      <textarea name="txtComments" class="form-control" placeholder="{{leave_comment}}" id="comments" style="height: 100px"></textarea>
+                      <label for="comments">{{comments}}</label>
+                  </div>
+              </div>
+          </fieldset>
+
+          <!-- ---------------------- SUBMIT and RETURN buttons ---------------------- -->
+          <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">{{send}}</button>
+          <a href="javascript:history.back()" class="w-100 mb-2 btn btn-lg rounded-3 btn-secondary">{{return}}</a>
+
+        </form>
+    <!-- ---------------------- End of FORM ---------------------- -->
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- ---------------------- End of MODAL ---------------------- -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>

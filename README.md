@@ -59,6 +59,7 @@ The repository will be updated on an ongoing basis.
 - [**Templates**: mark strings for translation](/assets/django/templates_mark_for_translation/README.md)
 - [**Templates**: interpolation](/assets/django/templates_interpolation/README.md)
 - [**Allowing Users to Switch Languages**](https://testdriven.io/blog/multiple-languages-in-django/#allowing-users-to-switch-languages)
+- [**Allowing Users to Switch Languages**: A Django project example](/assets/_projects/django/WebSite_MODAL_FORM_DB_i18n/project/create_app/templates/index.html)
 
 
 

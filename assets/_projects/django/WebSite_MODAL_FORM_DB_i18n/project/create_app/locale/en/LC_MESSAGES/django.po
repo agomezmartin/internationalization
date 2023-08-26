@@ -1,0 +1,358 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-08-26 21:57+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: templates/form_confirmation.html:9 templates/index.html:10
+#: templates/mainForm.html:10
+msgid "Registry"
+msgstr ""
+
+#: templates/form_confirmation.html:10 templates/index.html:11
+#: templates/mainForm.html:11
+msgid "Client data"
+msgstr ""
+
+#: templates/form_confirmation.html:11
+msgid "The user has been saved succesfully."
+msgstr ""
+
+#: templates/form_confirmation.html:12
+msgid "Theres has been a problem. Try again."
+msgstr ""
+
+#: templates/form_confirmation.html:13
+msgid "Close"
+msgstr ""
+
+#: templates/form_confirmation.html:14 templates/mainForm.html:35
+msgid "Go back"
+msgstr ""
+
+#: templates/form_confirmation.html:15
+msgid "New user"
+msgstr ""
+
+#: templates/form_confirmation.html:16
+msgid "See data"
+msgstr ""
+
+#: templates/index.html:12 templates/mainForm.html:12
+msgid "Name"
+msgstr ""
+
+#: templates/index.html:13 templates/mainForm.html:13
+msgid "First Surname"
+msgstr ""
+
+#: templates/index.html:14 templates/mainForm.html:14
+#: templates/mainForm.html:15 templates/mainForm.html:18
+msgid "Second Surname"
+msgstr ""
+
+#: templates/index.html:15
+msgid "Continue"
+msgstr ""
+
+#: templates/index.html:16
+msgid "Fill in and click above to continue with the process."
+msgstr ""
+
+#: templates/index.html:17
+msgid "Select a language"
+msgstr ""
+
+#: templates/mainForm.html:16
+msgid "Address details"
+msgstr ""
+
+#: templates/mainForm.html:17
+msgid "Address"
+msgstr ""
+
+#: templates/mainForm.html:19
+msgid "Choose:"
+msgstr ""
+
+#: templates/mainForm.html:20
+msgid "City"
+msgstr ""
+
+#: templates/mainForm.html:21
+msgid "Gender details"
+msgstr ""
+
+#: templates/mainForm.html:22
+msgid "Male"
+msgstr ""
+
+#: templates/mainForm.html:23
+msgid "Female"
+msgstr ""
+
+#: templates/mainForm.html:24
+msgid "Prefers not to say"
+msgstr ""
+
+#: templates/mainForm.html:25
+msgid "IT details"
+msgstr ""
+
+#: templates/mainForm.html:26
+msgid "Please, select your Operating System(s):"
+msgstr ""
+
+#: templates/mainForm.html:27
+msgid "Windows XP"
+msgstr ""
+
+#: templates/mainForm.html:28
+msgid "WindowsXP"
+msgstr ""
+
+#: templates/mainForm.html:29
+msgid "W 2000"
+msgstr ""
+
+#: templates/mainForm.html:30
+msgid "W2000"
+msgstr ""
+
+#: templates/mainForm.html:31
+msgid "Linux"
+msgstr ""
+
+#: templates/mainForm.html:32
+msgid "Leave a comment here"
+msgstr ""
+
+#: templates/mainForm.html:33
+msgid "Comments:"
+msgstr ""
+
+#: templates/mainForm.html:34
+msgid "Send"
+msgstr ""
+
+#: views.py:20
+msgid "Madrid"
+msgstr ""
+
+#: views.py:20
+msgid "Barcelona"
+msgstr ""
+
+#: views.py:20
+msgid "Valencia"
+msgstr ""
+
+#: views.py:20
+msgid "Sevilla"
+msgstr ""
+
+#: views.py:20
+msgid "Zaragoza"
+msgstr ""
+
+#: views.py:20
+msgid "Málaga"
+msgstr ""
+
+#: views.py:20
+msgid "Murcia"
+msgstr ""
+
+#: views.py:20
+msgid "Palma de Mallorca"
+msgstr ""
+
+#: views.py:20
+msgid "Las Palmas de Gran Canaria"
+msgstr ""
+
+#: views.py:20
+msgid "Bilbao"
+msgstr ""
+
+#: views.py:20
+msgid "Alicante"
+msgstr ""
+
+#: views.py:20
+msgid "Córdoba"
+msgstr ""
+
+#: views.py:20
+msgid "Valladolid"
+msgstr ""
+
+#: views.py:20
+msgid "Vitoria"
+msgstr ""
+
+#: views.py:20
+msgid "La Coruña"
+msgstr ""
+
+#: views.py:20
+msgid "Granada"
+msgstr ""
+
+#: views.py:20
+msgid "Oviedo"
+msgstr ""
+
+#: views.py:20
+msgid "Santa Cruz de Tenerife"
+msgstr ""
+
+#: views.py:20
+msgid "Pamplona"
+msgstr ""
+
+#: views.py:20
+msgid "Almería"
+msgstr ""
+
+#: views.py:20
+msgid "San Sebastián"
+msgstr ""
+
+#: views.py:20
+msgid "Burgos"
+msgstr ""
+
+#: views.py:20
+msgid "Albacete"
+msgstr ""
+
+#: views.py:20
+msgid "Santander"
+msgstr ""
+
+#: views.py:20
+msgid "Castellón de la Plana"
+msgstr ""
+
+#: views.py:20
+msgid "Logroño"
+msgstr ""
+
+#: views.py:20
+msgid "Badajoz"
+msgstr ""
+
+#: views.py:20
+msgid "Salamanca"
+msgstr ""
+
+#: views.py:20
+msgid "Huelva"
+msgstr ""
+
+#: views.py:20
+msgid "Lérida"
+msgstr ""
+
+#: views.py:20
+msgid "Tarragona"
+msgstr ""
+
+#: views.py:20
+msgid "León"
+msgstr ""
+
+#: views.py:20
+msgid "Cádiz"
+msgstr ""
+
+#: views.py:20
+msgid "Jaén"
+msgstr ""
+
+#: views.py:20
+msgid "Orense"
+msgstr ""
+
+#: views.py:20
+msgid "Gerona"
+msgstr ""
+
+#: views.py:20
+msgid "Lugo"
+msgstr ""
+
+#: views.py:20
+msgid "Cáceres"
+msgstr ""
+
+#: views.py:20
+msgid "Melilla"
+msgstr ""
+
+#: views.py:20
+msgid "Guadalajara"
+msgstr ""
+
+#: views.py:20
+msgid "Toledo"
+msgstr ""
+
+#: views.py:20
+msgid "Ceuta"
+msgstr ""
+
+#: views.py:20
+msgid "Pontevedra"
+msgstr ""
+
+#: views.py:20
+msgid "Palencia"
+msgstr ""
+
+#: views.py:20
+msgid "Ciudad Real"
+msgstr ""
+
+#: views.py:20
+msgid "Zamora"
+msgstr ""
+
+#: views.py:20
+msgid "Ávila"
+msgstr ""
+
+#: views.py:20
+msgid "Cuenca"
+msgstr ""
+
+#: views.py:20
+msgid "Huesca"
+msgstr ""
+
+#: views.py:20
+msgid "Segovia"
+msgstr ""
+
+#: views.py:20
+msgid "Soria"
+msgstr ""
+
+#: views.py:20
+msgid "Teruel"
+msgstr ""
