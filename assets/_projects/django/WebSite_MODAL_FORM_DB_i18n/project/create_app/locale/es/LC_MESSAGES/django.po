@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-26 21:57+0200\n"
+"POT-Creation-Date: 2023-08-27 10:49+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -52,6 +52,36 @@ msgstr "Nuevo usuario"
 msgid "See data"
 msgstr "Ver datos"
 
+#: templates/form_confirmation.html:17
+msgid "User name"
+msgstr "Nombre de usuario"
+
+#: templates/form_confirmation.html:18 templates/mainForm.html:17
+msgid "Address"
+msgstr "Dirección"
+
+#: templates/form_confirmation.html:19 templates/mainForm.html:20
+msgid "City"
+msgstr "Ciudad"
+
+#: templates/form_confirmation.html:20
+msgid "Gender"
+msgstr "Sexo"
+
+#: templates/form_confirmation.html:21
+msgid "Operating system"
+msgstr "Sistema operativo"
+
+#: templates/form_confirmation.html:22
+msgid "Delete"
+msgstr "Eliminar"
+
+#: templates/form_confirmation.html:23
+#, fuzzy
+#| msgid "Comments:"
+msgid "Comments"
+msgstr "Comentarios"
+
 #: templates/index.html:12 templates/mainForm.html:12
 msgid "Name"
 msgstr "Nombre"
@@ -81,17 +111,9 @@ msgstr "Seleccinar idioma"
 msgid "Address details"
 msgstr "Dirección postal"
 
-#: templates/mainForm.html:17
-msgid "Address"
-msgstr "Dirección"
-
 #: templates/mainForm.html:19
 msgid "Choose:"
 msgstr "Elige:"
-
-#: templates/mainForm.html:20
-msgid "City"
-msgstr "Ciudad"
 
 #: templates/mainForm.html:21
 msgid "Gender details"

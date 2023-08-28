@@ -14,6 +14,15 @@
     {% translate "Go back" as return %}
     {% translate "New user" as new_user %}
     {% translate "See data" as view_table %}
+    {% translate "User name" as name_client %}
+    {% translate "Address" as address_client %}
+    {% translate "City" as city_client %}
+    {% translate "Gender" as gender_client %}
+    {% translate "Operating system" as operating_system_client %}
+    {% translate "Delete" as delete %}
+    {% translate "Comments" as comments_client %}
+    {% translate "Delete client" as delete_client %}
+    {% translate "Do not delete" as dnt_delete_client %}
 
     <title>{{the_title}}</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
@@ -31,10 +40,10 @@
                   {% elif entry_result == 0 %}
                 <h1 class="modal-title fs-5">{{try_again}}</h1>
                   {% endif %}
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="{{close}}"></button>
+<!----                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="{{close}}"></button> ---->
               </div>
               <div class="modal-footer flex-column border-top-0">
-                <a href="javascript:history.back()" type="button" class="btn btn-lg btn-primary w-100 mx-0 mb-2">{{return}}</a>
+<!--                <a href="javascript:history.back()" type="button" class="btn btn-lg btn-primary w-100 mx-0 mb-2">{{return}}</a> -->
                 <a href="index" class="btn btn-lg btn-info w-100 mx-0 mb-2">{{new_user}}</a>
                 <a href="viewTable" class="btn btn-lg btn-secondary w-100 mx-0 mb-2">{{view_table}}</a>
               </div>
@@ -47,17 +56,17 @@
 
 <!-- ---------------------- TABLE ---------------------- -->
     {% if table %}
-    <table class="table">
+    <table class="table table-hover">
       <thead>
         <tr>
 <!--          <th scope="col">id_user</th> -->
-          <th scope="col">name_user</th>
-          <th scope="col">address</th>
-          <th scope="col">city</th>
-          <th scope="col">gender</th>
-          <th scope="col">operating_system</th>
-          <th scope="col">Delete</th>
-          <th scope="col">comments</th>
+          <th scope="col">{{name_client}}</th>
+          <th scope="col">{{address_client}}</th>
+          <th scope="col">{{city_client}}</th>
+          <th scope="col">{{gender_client}}</th>
+          <th scope="col">{{operating_system_client}}</th>
+          <th scope="col">{{delete}}</th>
+          <th scope="col">{{comments_client}}</th>
         </tr>
       </thead>
       <tbody>
@@ -69,16 +78,43 @@
           <td>{{data.3}}</td>
           <td>{{data.4}}</td>
           <td>{{data.5}}</td>
+          <!-- DELETE COLUMN -->
           <td>
-                <a href="deleteClient?id_user={{data.0}}" class="btn-close"></a>
+                <a href="deleteClient?id_user={{data.0}}" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="grey" class="bi bi-trash" viewBox="0 0 16 16">
+                      <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z"/>
+                      <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z"/>
+                    </svg>
+                </a>
+
+                <!-- Modal -->
+<!----                <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModal" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+---->                        <!--  BODY -->
+<!----                      <div class="modal-body">
+                          Are you sure you want to delete {{data.1}}'s details?. ID: {{data.0}}
+                      </div>
+---->                        <!-- END OF BODY -->
+<!----                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">{{dnt_delete_client}}</button>
+                        <a href="deleteClient?id_user={{data.0}}" type="button" class="btn btn-primary">{{delete_client}}</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+---->                <!-- End of Modal -->
             </td>
+          <!-- End of DELETE COLUMN -->
           <td>{{data.6}}</td>
       </tr>
       {% endfor %}
       </tbody>
     </table>
     {% endif %}
-
 <!-- ---------------------- End of TABLE ---------------------- -->
 
 
