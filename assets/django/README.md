@@ -1,4 +1,4 @@
-# HOW TO: i18n with Django
+# HOW TO: Basic i18n configuration with Django
 
 This class-based API is the recommended way of internationalizing Python applications. 
 

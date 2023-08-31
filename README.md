@@ -55,40 +55,27 @@ The repository will be updated on an ongoing basis.
 <details>
 <summary><strong>DJANGO </strong></summary>
 
-- [**Gettext**: extract and compile strings for translation](/assets/django/README.md)
-- [**Templates**: mark strings for translation](/assets/django/templates_mark_for_translation/README.md)
-- [**Templates**: interpolation](/assets/django/templates_interpolation/README.md)
-- [**Allowing Users to Switch Languages**](https://testdriven.io/blog/multiple-languages-in-django/#allowing-users-to-switch-languages)
-- [**Allowing Users to Switch Languages**: A Django project example](/assets/_projects/django/WebSite_MODAL_FORM_DB_i18n/project/create_app/templates/index.html)
-
-
-
-
-
+- [**01_Basic configuration**: Gettext. (Extract and compile strings for translation)](/assets/django/README.md)
+- [**01_Advanced configuration**: Gettext + Django settings.](/assets/django/advanced_config/README.md)
+- [**02_Templates**: mark strings for translation](/assets/django/templates_mark_for_translation/README.md)
+- [**02_Templates**: interpolation (To be done...)](/assets/django/templates_interpolation/README.md)
+- [**03_Allowing Users to Switch Languages**](https://testdriven.io/blog/multiple-languages-in-django/#allowing-users-to-switch-languages)
+- [A Django project example](/assets/_projects/django/WebSite_MODAL_FORM_DB_i18n/project/create_app/templates/index.html)
 </details>
 <!-- ---------------------------------- -->
 <details>
 <summary><strong>JAVA</strong></summary>
 
-- [**ResourceBundle**](/assets/java/resourceBundle/README.md)
+- [**ResourceBundle**: To be done...](/assets/java/resourceBundle/README.md)
 
 </details>
 <!-- ---------------------------------- -->
 <details>
 <summary><strong>FILE PREPARATION</strong></summary>
 
-- [File preparation tasks](/assets/file_prepp/README.md)
+- [File preparation tasks: To be done...](/assets/file_prepp/README.md)
 
 </details>
 <!-- ---------------------------------- -->
 
-
-<!--
-			--------------- LIST OF RESOURCES ---------------
-
-1. [ResourceBundle internationalization module](/file_prepp/README.md)
-2. [Resource file text extraction using regex](/text_extraction/README.md)
-3. [File preparation tasks](/file_prepp/README.md)
-
--->
 <img src="https://github.com/agomezmartin/regexl10n/blob/main/assets/images/world_flags.gif">
