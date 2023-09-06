@@ -1,7 +1,7 @@
 # HOW TO: Advanced i18n configuration with Django settings file
 
-The following configuration enables Django to automatically read user's local language and then switch between languages as required.
-It is assumed Gettext has already been installed in the project. See [here](/assets/django/README.md) if required.
+The following configuration enables Django to (1) automatically read user's local language and (2) switch between languages as required.
+It is assumed Gettext has already been installed in the project. See [here](/assets/django/README.md) if otherwise.
 
 8 step configuration:
 
@@ -99,28 +99,4 @@ urlpatterns = i18n_patterns (
 ```
 This module will create language-specific versions of your app (/en, /es,...), hence optimizing indexation for search engines.
 
-## 8. Display to the user switching language options
-In order for the user to **switch language**, we will need to display the options in our templates.
-The example below is a dropdown menu that will display as many languages as we will have set during this configuration.
-``` HTML
-<!-- ---------------------- I18N MENU ---------------------- -->
-{% get_current_language as CURRENT_LANGUAGE %} <!-- Returns the current user’s preferred language as a string AND has it assigned to a variable name -->
-{% get_available_languages as AVAILABLE_LANGUAGES %} <!-- Returns a list of tuples declared in the SETTINGS.PY file in which the first element is the language code and the second is the language name (translated into the currently active locale). A variable name is assigned. -->
-{% get_language_info_list for AVAILABLE_LANGUAGES as languages %} <!-- It retrieves information about any of the available languages. -->
-<div class="btn-group" style="display: flex;">
-
-  <button type="button" style="flex:50%" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-      	Select language:
-  </button>
-
-  <ul class="dropdown-menu">
-    {% for language in languages %}
-    <!-- i18n patterns module will read this code and execute it as URL -->
-    <li><a href="/{{ language.code }}/"
-           class="dropdown-item">
-        {{ language.name_local }}</a></li>
-    {% endfor %}
-  </ul>
-</div>
-<!-- ---------------------- End of I18N MENU ---------------------- -->
-```
+## 8. [Display switching language options to the user](/assets/django/switch_languages/README.md)

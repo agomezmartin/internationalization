@@ -25,7 +25,7 @@ Same example using a variable:
 ``` HTML
 <!DOCTYPE html>
 {% load i18n %}
-{% language 'es' %}
+{% language 'es' %} <!-- Not required if advanced i18n configuration is performed -->
 
 <html>
 <head>
@@ -35,5 +35,5 @@ Same example using a variable:
 ...
 </body>
 </html>
-{% endlanguage %}
+{% endlanguage %} <!-- Not required if advanced i18n configuration is performed -->
 ```
