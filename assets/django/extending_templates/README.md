@@ -1,10 +1,13 @@
-# HOW TO: Reverse URL maps
+# HOW TO: Extend templates
 
-Reversing URL maps enables to create **links** that **dinamycally** point at URL maps. The opposite to this Django-specific technique is **hard coding** links.
+From the **internationalization (i18n)** point of view, extending Django templates makes sense as not only prevents duplicating boilerplate code on every page (ie. navbar, footer, title, etc.), it optimizes the number of language-specific instances created for page content.
 
-Reversing URL maps is a more robust approach as it is NOT pattern-dependant.
+Django uses Gettext to extract, translate and compile content. By extending templates, Gettext will need to browse through only the _base_generic.html_ template to extract repeated content.
 
-## Standard hard coded link
+After compilation, Django _templating language_ will extend repeated sections and replace just the bits that are different for each specific page.
+
+
+## Create a _Base Generic_ template
 
 DJANGO TEMPLATE
 ``` HTML
@@ -46,4 +49,4 @@ urlpatterns = [
 ]
 ```
 
-This because the link is pointing to the **name attribute**.
+This is because the link is pointing to the **name attribute**.
