@@ -59,7 +59,7 @@ The repository will be updated on an ongoing basis.
 - [**01_Advanced configuration**: Gettext + Django settings.](/assets/django/advanced_config/README.md)
 - [**02_Templates**: mark strings for translation](/assets/django/templates_mark_for_translation/README.md)
 - [**02_Templates**: interpolation (To be done...)](/assets/django/templates_interpolation/README.md)
-- [**02_Extending templates** (In progress...)](/assets/django/extending_templates/README.md)
+- [**02_Extending templates**](/assets/django/extending_templates/README.md)
 - [**03_Allowing Users to Switch Languages**](/assets/django/switch_languages/README.md)
 - [**04_Reversed URL Maps**](/assets/django/reversed_URL_maps/README.md)
 - [Django project example](/assets/_projects/django/WebSite_MODAL_FORM_DB_i18n/project/create_app/templates/index.html)
