@@ -67,6 +67,13 @@ LOCALE_PATHS = [
 ```
 ## 2. Create a "LOCALE" **folder** inside your Django **app**
 
+Once the LOCALE folder has been created, add a new folder for each language:
+
+locale
+├── en
+├── es
+└── fr
+
 ## 3. Mark strings for translation
 
 - [Python files (\.py files)](/assets/python/gettext/README.md)
