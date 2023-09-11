@@ -69,7 +69,7 @@ LOCALE_PATHS = [
 
 Once the LOCALE folder has been created, add a new folder for each language:
 
-locale
+locale </br>
 ├── en </br>
 ├── es </br>
 └── fr
