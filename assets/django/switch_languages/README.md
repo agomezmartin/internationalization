@@ -32,4 +32,4 @@ Unless i18n settings have been configured in our [settings.py](/assets/django/ad
 <!-- ---------------------- End of I18N MENU ---------------------- -->
 ```
 
-This entry is an adaptation from [**Samuel Torimiro's**](https://testdriven.io/blog/multiple-languages-in-django/#allowing-users-to-switch-languages) article.
+This entry is an adaptation from [**Samuel Torimiro**](https://testdriven.io/blog/multiple-languages-in-django/#allowing-users-to-switch-languages)'s article.
