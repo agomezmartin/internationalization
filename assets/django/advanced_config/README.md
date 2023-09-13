@@ -65,7 +65,18 @@ LOCALE_PATHS = [
     BASE_DIR / 'locale/',
 ]
 ```
-## 2. Create a "LOCALE" **folder** inside your Django **app**
+
+## 2. Add language PREFIX to your **project**'s URLs (project/URLS.py)
+``` Python
+from django.conf.urls.i18n import i18n_patterns
+
+urlpatterns = i18n_patterns (
+    path("", include('app.urls'))
+    )
+```
+This module will create language-specific versions of your app (/en, /es,...), hence optimizing indexation for search engines.
+
+## 3. Create a "LOCALE" **folder** inside your Django **app**
 
 Once the LOCALE folder has been created, add a new folder for each target language:
 
@@ -75,13 +86,13 @@ locale</br>
 ├── fr</br>
 └─ ...
 
-## 3. Mark strings for translation
+## 4. Mark strings for translation
 
 - [Python files (\.py files)](/assets/python/gettext/README.md)
  
 - [Django templates (\.html files)](/assets/django/templates_mark_for_translation/README.md)
 
-## 4. Extract strings
+## 5. Extract strings
 
 In your **app**, run the following command:
 ``` Linux
@@ -89,22 +100,12 @@ $ django-admin makemessages --all --ignore=env
 ```
 This command will browse through the entire project looking for any strings **marked for translation** AND extract them into language-specific **PO files**.
 
-## 5. Translate PO files
+## 6. Translate PO files
 
-## 6. Compile translated .PO files into .MO files
+## 7. Compile translated .PO files into .MO files
 ``` Linux
 $ django-admin compilemessages
 ```
 This command will generate machine-readable files.
-
-## 7. Add language PREFIX to your **project**'s URLs (project/URLS.py)
-``` Python
-from django.conf.urls.i18n import i18n_patterns
-
-urlpatterns = i18n_patterns (
-	path("", include('app.urls'))
-	)
-```
-This module will create language-specific versions of your app (/en, /es,...), hence optimizing indexation for search engines.
 
 ## 8. [Display switching language options to the user](/assets/django/switch_languages/README.md)
