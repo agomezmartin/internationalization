@@ -1,0 +1,35 @@
+{% extends "base_generic.html" %}
+{% load i18n %}
+
+<!-- ----- Title block ----- -->
+{% block title %}
+
+    {% translate "Authors Local Library" as the_title %}
+
+    <title>{{ the_title }}</title>
+
+{% endblock %}
+
+<!-- ----- Content block ----- -->
+{% block content %}
+
+    {% translate "Welcome to Local Library" as welcome %}
+    {% translate "Local Library Home" as home %}
+    {% translate "Dynamic content" as dynamic_content %}
+    {% translate "The library has the following record counts:" as library_records %}
+    {% translate "You have taken %s books" as taken_books %}
+
+    {% translate "Books:" as books %}
+    {% translate "Copies:" as copies %}
+    {% translate "Copies available:" as copies_available %}
+    {% translate "Authors:" as authors %}
+    {% translate "Genres that contain the word 'Novel':" as genres_by_word %}
+    {% translate "Books that contain the word 'a':" as books_by_word %}
+
+<ul>
+    {% for author in author_list %}
+        <h4><li><a href="{{ author.get_absolute_url }}">{{author}}</a></li></h4>
+    {% endfor%}
+</ul>
+{% endblock %}
+

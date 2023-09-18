@@ -1,0 +1,37 @@
+{% extends "base_generic.html" %}
+{% load i18n %}
+
+<!-- ----- Title block ----- -->
+{% block title %}
+
+    {% translate "Authors Details" as the_title %}
+
+    <title>{{ the_title }}</title>
+
+{% endblock %}
+
+<!-- ----- Content block ----- -->
+{% block content %}
+
+    {% translate "Author details" as author_details %}
+    {% translate "Author name" as author_name %}
+    {% translate "Author name" as author_surname %}
+    {% translate "Date of birth" as author_dob %}
+    {% translate "Date of death" as author_dod %}
+
+
+        <h4>{{author_details}}</h4>
+
+        <h5>{{author_name}}</h5>
+        <p>{{author.first_name}}</p>
+
+        <h5>{{author_surname}}</h5>
+        <p>{{author.last_name}}</p>
+
+        <h5>{{author_dob}}</h5>
+        <p>{{author.date_of_birth}}</p>
+
+        <h5>{{author_dod}}</h5>
+        <p>{{author.date_of_death}}</p>
+
+{% endblock %}

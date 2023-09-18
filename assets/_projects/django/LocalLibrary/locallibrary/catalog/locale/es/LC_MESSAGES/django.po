@@ -1,0 +1,212 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-15 11:38+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: models.py:11
+msgid "Enter a book genre (e.g. Science Fiction)"
+msgstr "Introduce un género de libro (p. ej.: Ciencia ficción)"
+
+#: models.py:20
+msgid "Enter the book's natural language (e.g. English, French, Japanese etc.)"
+msgstr "Introduce el idioma del libro (p. ej.: inglés, francés, japonés, etc.)"
+
+#: models.py:32
+msgid "Author"
+msgstr "Autor"
+
+#: models.py:34
+msgid "Enter a brief description of the book"
+msgstr "Introduce una breve descripción del libro"
+
+#: models.py:36
+msgid ""
+"13 Character <a href=\"https://www.isbn-international.org/content/what-"
+"isbn\">ISBN number</a>"
+msgstr ""
+"<a href=\"https://www.isbn-international.org/content/what-"
+"isbn\">Número ISBN</a> de 13 caracteres"
+
+#: models.py:40
+msgid "Select a genre for this book"
+msgstr "Seleccione el género del libro"
+
+#: models.py:41
+msgid "Language"
+msgstr "Idioma"
+
+#: models.py:59
+msgid "Unique ID for this particular book across whole library"
+msgstr "Número único asignado a este libro para identificarlos en la biblioteca"
+
+#: models.py:60
+msgid "Book"
+msgstr "Libro"
+
+#: models.py:65
+msgid "m"
+msgstr "m"
+
+#: models.py:65
+msgid "Maintenance"
+msgstr "En mantenimiento"
+
+#: models.py:66
+msgid "o"
+msgstr "n"
+
+#: models.py:66
+msgid "On loan"
+msgstr "No disponible"
+
+#: models.py:67
+msgid "a"
+msgstr "d"
+
+#: models.py:67
+msgid "Available"
+msgstr "Disponible"
+
+#: models.py:68
+msgid "r"
+msgstr "r"
+
+#: models.py:68
+msgid "Reserved"
+msgstr "Reservado"
+
+#: models.py:76
+msgid "Book availability"
+msgstr "Disponibilidad del libro"
+
+#: templates/base_generic.html:15
+msgid "Local Library"
+msgstr "Biblioteca local"
+
+#: templates/base_generic.html:18
+msgid "Please, select a language"
+msgstr "Seleccione un idioma"
+
+#: templates/base_generic.html:19
+msgid "Departments"
+msgstr "Departamentos"
+
+#: templates/base_generic.html:20
+msgid "Number"
+msgstr "Número"
+
+#: templates/base_generic.html:21
+msgid "Name"
+msgstr "Nombre"
+
+#: templates/base_generic.html:22
+msgid "Location"
+msgstr "Ubicación"
+
+#: templates/base_generic.html:23
+msgid "Department Number"
+msgstr "Número de departamento"
+
+#: templates/base_generic.html:24
+msgid "Insert"
+msgstr "Introduzca"
+
+#: templates/base_generic.html:25
+msgid "Modify"
+msgstr "Modifique"
+
+#: templates/base_generic.html:26
+msgid "Delete"
+msgstr "Eliminar"
+
+#: templates/base_generic.html:27
+msgid "View departments"
+msgstr "Ver departamentos"
+
+#: templates/base_generic.html:28
+msgid "The departement has been saved correctly"
+msgstr "El departamento se ha guardado correctamente"
+
+#: templates/base_generic.html:29
+msgid "The departement has been updated correctly"
+msgstr "El departamento se ha actualizado correctamente"
+
+#: templates/base_generic.html:30
+msgid "The departement has been deleted correctly"
+msgstr "El departamento se ha eliminado correctamente"
+
+#: templates/base_generic.html:31
+msgid "Home"
+msgstr "Inicio"
+
+#: templates/base_generic.html:32
+msgid "All books"
+msgstr "Ver todos los libros"
+
+#: templates/base_generic.html:33
+msgid "All authors"
+msgstr "Ver todos los autores"
+
+#: templates/index.html:7
+msgid "Index Local Library"
+msgstr "Biblioteca Local: Inicio"
+
+#: templates/index.html:15
+msgid "Welcome to Local Library"
+msgstr "Bienvenido a la Biblioteca Local"
+
+#: templates/index.html:16
+msgid "Local Library Home"
+msgstr "Biblioteca Local: Inicio"
+
+#: templates/index.html:17
+msgid "Dynamic content"
+msgstr "Contenido dinámico"
+
+#: templates/index.html:18
+msgid "The library has the following record counts:"
+msgstr "Número de registros disponibles en la biblioteca:"
+
+#: templates/index.html:19
+#, python-format
+msgid "You have taken %%s books"
+msgstr "Ha reservado %%s libros"
+
+#: templates/index.html:21
+msgid "Books:"
+msgstr "Libros:"
+
+#: templates/index.html:22
+msgid "Copies:"
+msgstr "Copias:"
+
+#: templates/index.html:23
+msgid "Copies available:"
+msgstr "Copias disponibles:"
+
+#: templates/index.html:24
+msgid "Authors:"
+msgstr "Autores:"
+
+#: templates/index.html:25
+msgid "Genres that contain the word 'Novel':"
+msgstr "Géneros que contienen la palabra 'Novel':"
+
+#: templates/index.html:26
+msgid "Books that contain the word 'a':"
+msgstr "Libros que contienen la letra 'a':"

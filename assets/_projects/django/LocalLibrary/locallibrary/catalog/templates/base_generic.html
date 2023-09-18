@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+{% load i18n %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static '/bootstrap-5.3.1-dist/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static '/css/styles.css' %}">
+
+    <!-- STRINGS declarations to be used as VARIABLES throughout the page -->
+    {% translate "Local Library" as the_title %}
+
+
+    {% translate "Please, select a language" as select_language %}
+    {% translate "Departments" as departments %}
+    {% translate "Number" as number %}
+    {% translate "Name" as name %}
+    {% translate "Location" as location %}
+    {% translate "Department Number" as deptno %}
+    {% translate "Insert" as insert_button %}
+    {% translate "Modify" as modify_button %}
+    {% translate "Delete" as delete_button %}
+    {% translate "View departments" as view_button %}
+    {% translate "The departement has been saved correctly" as created_succesfully %}
+    {% translate "The departement has been updated correctly" as updated_succesfully %}
+    {% translate "The departement has been deleted correctly" as deleted_succesfully %}
+    {% translate "Home" as home_menu %}
+    {% translate "All books" as books_menu %}
+    {% translate "All authors" as authors_menu %}
+
+    {% block title %}
+    <title>{{ the_title }}</title>
+    {% endblock %}
+</head>
+<body>
+
+<!-- ---------------------- I18N MENU ---------------------- -->
+{% get_current_language as CURRENT_LANGUAGE %} <!-- Returns the current user’s preferred language as a string AND has it assigned to a variable name -->
+{% get_available_languages as AVAILABLE_LANGUAGES %} <!-- Returns a list of tuples declared in the SETTINGS.PY file in which the first element is the language code and the second is the language name (translated into the currently active locale). A variable name is assigned. -->
+{% get_language_info_list for AVAILABLE_LANGUAGES as languages %} <!-- It retrieves information about any of the available languages. -->
+<div class="btn-group" style="display: flex;">
+  <button type="button" style="flex:50%" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+      {{select_language}}
+  </button>
+  <ul class="dropdown-menu">
+    {% for language in languages %}
+    <li><a href="/{{ language.code }}/"
+           class="dropdown-item">
+        {{ language.name_local }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
+<!-- ---------------------- End of I18N MENU ---------------------- -->
+
+<div class="container-fluid">
+   <!-- ---------------------- I18N MENU ---------------------- -->
+
+    <div class="row">
+            <div class="col-sm-2">
+              {% block sidebar %}
+                <ul class="sidebar-nav">
+                  <li><a href="{% url 'index' %}">{{home_menu}}</a></li>
+                  <li><a href="{% url 'books' %}">{{books_menu}}</a></li>
+                  <li><a href="{% url 'authors' %}">{{authors_menu}}</a></li>
+                </ul>
+              {% endblock %}
+            </div>
+            <div class="col-sm-10 ">
+                {% block content %}
+
+                {% endblock %}
+            </div>
+    </div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>
