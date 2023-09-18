@@ -8,32 +8,9 @@ The world we live in is multicultural, and global.
 Developing robust applications that can efficiently **handle** several **languages** and their locale-specific metrics depending on **where in the world they are used** is one of those challenges big and "less big" businesses face these days.
 
 This repository is an attempt to **gather as many internationalization (i18n) resources** and tools as possible together in a single place. It will provide either original documentation on processes OR reference to resources.
-<!-- in what otherwise is an inifite and messy pool. -->
 
 This is a humble yet very enthusiastic project.
 The repository will be updated on an ongoing basis.
-
-<!-- ![](https://github.com/agomezmartin/regexl10n/blob/main/assets/images/world_flags.gif)
--->
-
-
-
-<!--
-		--------------- DROP DOWN MENU EXAMPLE ---------------
-
-<details>
-<summary><strong>LIST OF RESOURCES</strong></summary>
-
-
-1. [Python: ResourceBundle internationalization module](/file_prepp/README.md)
-2. [Resource file text extraction using regex](/text_extraction/README.md)
-3. [File preparation tasks](/file_prepp/README.md)
-
-</details>
--->
-
-
-
 
 # LIST OF i18n RESOURCES
 <!-- ---------------------------------- -->
@@ -63,6 +40,10 @@ The repository will be updated on an ongoing basis.
 - [**03_Allowing Users to Switch Languages**](/assets/django/switch_languages/README.md)
 - [**04_Reversed URL Maps**](/assets/django/reversed_URL_maps/README.md)
 - [Django project example](/assets/_projects/django/WebSite_MODAL_FORM_DB_i18n/project/create_app/templates/index.html)
+
+
+Django best-practice VIEWS: generic class-based list and detail views (These can significantly reduce the amount of view code needed, making them easier to write and maintain)
+
 </details>
 <!-- ---------------------------------- -->
 <details>
