@@ -2,7 +2,11 @@
 
 ## 1. Mark strings
 
-In order to have string exported for translation, they need to be marked following the format **{% translate "..." %}**. Any content between the double quotes will be exported for translation into PO files.
+In order to have strings exported for translation, they need to be marked following the following format:
+``` Python
+ {% translate "..." %}
+ ```
+ Any content between the double quotes will be exported for translation into PO files.
 
 Example:
 ``` HTML
