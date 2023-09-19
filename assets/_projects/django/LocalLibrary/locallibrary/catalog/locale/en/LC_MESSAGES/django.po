@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-15 11:38+0200\n"
+"POT-Creation-Date: 2023-09-19 11:55+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,7 +26,7 @@ msgstr ""
 msgid "Enter the book's natural language (e.g. English, French, Japanese etc.)"
 msgstr ""
 
-#: models.py:32
+#: models.py:32 templates/catalog/book_detail.html:18
 msgid "Author"
 msgstr ""
 
@@ -44,7 +44,7 @@ msgstr ""
 msgid "Select a genre for this book"
 msgstr ""
 
-#: models.py:41
+#: models.py:41 templates/catalog/book_detail.html:21
 msgid "Language"
 msgstr ""
 
@@ -160,51 +160,128 @@ msgstr ""
 msgid "All authors"
 msgstr ""
 
-#: templates/index.html:7
-msgid "Index Local Library"
+#: templates/catalog/author_detail.html:7
+msgid "Authors Details"
 msgstr ""
 
-#: templates/index.html:15
+#: templates/catalog/author_detail.html:16
+msgid "Author details"
+msgstr ""
+
+#: templates/catalog/author_detail.html:17
+#: templates/catalog/author_detail.html:18
+msgid "Author name"
+msgstr ""
+
+#: templates/catalog/author_detail.html:19
+msgid "Date of birth"
+msgstr ""
+
+#: templates/catalog/author_detail.html:20
+msgid "Date of death"
+msgstr ""
+
+#: templates/catalog/author_list.html:7
+msgid "Authors Local Library"
+msgstr ""
+
+#: templates/catalog/author_list.html:16 templates/index.html:16
 msgid "Welcome to Local Library"
 msgstr ""
 
-#: templates/index.html:16
+#: templates/catalog/author_list.html:17 templates/index.html:17
 msgid "Local Library Home"
 msgstr ""
 
-#: templates/index.html:17
+#: templates/catalog/author_list.html:18 templates/index.html:18
 msgid "Dynamic content"
 msgstr ""
 
-#: templates/index.html:18
+#: templates/catalog/author_list.html:19 templates/index.html:19
 msgid "The library has the following record counts:"
 msgstr ""
 
-#: templates/index.html:19
+#: templates/catalog/author_list.html:20 templates/index.html:20
 #, python-format
 msgid "You have taken %%s books"
 msgstr ""
 
-#: templates/index.html:21
+#: templates/catalog/author_list.html:22 templates/index.html:22
 msgid "Books:"
 msgstr ""
 
-#: templates/index.html:22
+#: templates/catalog/author_list.html:23 templates/index.html:23
 msgid "Copies:"
 msgstr ""
 
-#: templates/index.html:23
+#: templates/catalog/author_list.html:24 templates/index.html:24
 msgid "Copies available:"
 msgstr ""
 
-#: templates/index.html:24
+#: templates/catalog/author_list.html:25 templates/index.html:25
 msgid "Authors:"
 msgstr ""
 
-#: templates/index.html:25
+#: templates/catalog/author_list.html:26 templates/index.html:26
 msgid "Genres that contain the word 'Novel':"
 msgstr ""
 
-#: templates/index.html:26
+#: templates/catalog/author_list.html:27 templates/index.html:27
 msgid "Books that contain the word 'a':"
+msgstr ""
+
+#: templates/catalog/book_detail.html:7
+msgid "Book detail"
+msgstr ""
+
+#: templates/catalog/book_detail.html:16
+msgid "Book Details"
+msgstr ""
+
+#: templates/catalog/book_detail.html:17
+msgid "Title"
+msgstr ""
+
+#: templates/catalog/book_detail.html:19
+msgid "Summary"
+msgstr ""
+
+#: templates/catalog/book_detail.html:20
+msgid "Genre"
+msgstr ""
+
+#: templates/catalog/book_detail.html:22
+msgid "ISBN"
+msgstr ""
+
+#: templates/catalog/book_detail.html:23
+msgid "Copies"
+msgstr ""
+
+#: templates/catalog/book_detail.html:24
+msgid "Due to be returned:"
+msgstr ""
+
+#: templates/catalog/book_detail.html:25
+msgid "Imprint:"
+msgstr ""
+
+#: templates/catalog/book_detail.html:26
+msgid "Id:"
+msgstr ""
+
+#: templates/catalog/book_list.html:7
+msgid "Books Local Library"
+msgstr ""
+
+#: templates/catalog/book_list.html:16
+msgid "Book List"
+msgstr ""
+
+#: templates/catalog/book_list.html:17
+msgid "There are no books in the library."
+msgstr ""
+
+#: templates/index.html:7
+msgid "Index Local Library"
 msgstr ""
