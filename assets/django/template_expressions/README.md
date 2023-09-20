@@ -19,12 +19,11 @@ Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}
 
 {% blocktranslate %}
 ```
-The example above will **NOT** correctly work.
-It still needs further fine-tuning
+The example above will **NOT** work correctly just yet. It still needs further fine-tuning
 
 ## Blocktranslate placeholders
 
-Blocktranslate handles variable content by assigning them to **placeholders** as shown below.
+Blocktranslate handles variable content by having it assigned to **placeholders** as shown below.
 ``` HTML
 {% blocktranslate with
 	number=page_obj.number|title
@@ -35,7 +34,7 @@ Page {{ number }} of {{ total }}
 
 {% endblocktranslate %}
 ```
-Placeholders are created within the blocktranslate block, **before** the equals sign, then they are used as variables in the sentence itself.
+Placeholders are created within the blocktranslate block, **before** the **equals sign**, then they are used as **variables** in the sentence itself.
 
 After executing the **makemessages** command, this example will be extracted to the language-specific PO file for translation:
 
