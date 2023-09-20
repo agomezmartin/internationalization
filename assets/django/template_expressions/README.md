@@ -1,4 +1,4 @@
-# HOW TO: Translate template expressions (sentences with variables)
+# HOW TO: Translate template expressions</br>(sentences with variables)
 
 Template expressions in Django allow to **display data** to the user fetched from databases, modules, external files or any content we pass it.
 
