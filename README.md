@@ -32,8 +32,8 @@ The repository will be updated on an ongoing basis.
 <details>
 <summary><strong>DJANGO </strong></summary>
 
-- [**01_Basic configuration**: Gettext. (Extract and compile strings for translation)](/assets/django/README.md)
-- [**01_Advanced configuration**: Gettext + Django settings.](/assets/django/advanced_config/README.md)
+- [**01_Configuration**: basic. Gettext. (Extract and compile strings for translation)](/assets/django/README.md)
+- [**01_Configuration**: advanced. Gettext + Django settings.](/assets/django/advanced_config/README.md)
 - [**02_Templates**: mark strings for translation](/assets/django/templates_mark_for_translation/README.md)
 - [**02_Templates**: mark template expressions for translation](/assets/django/template_expressions/README.md)
 - [**02_Templates**: extending templates](/assets/django/extending_templates/README.md)
