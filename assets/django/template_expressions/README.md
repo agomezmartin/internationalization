@@ -24,7 +24,7 @@ It still needs further fine-tuning
 
 ## Blocktranslate placeholders
 
-Blocktranslate handles variable content by assigning it to **placeholders** as shown below.
+Blocktranslate handles variable content by assigning them to **placeholders** as shown below.
 ``` HTML
 {% blocktranslate with
 	number=page_obj.number|title
@@ -37,7 +37,7 @@ Page {{ number }} of {{ total }}
 ```
 Placeholders are created within the blocktranslate block, **before** the equals sign, then they are used as variables in the sentence itself.
 
-After executing the **makemessages** command, this example will be extracted to the language-specific PO file for translation as below:
+After executing the **makemessages** command, this example will be extracted to the language-specific PO file for translation:
 
 ``` PO
 msgid "Page %(number)s of %(total)s"
