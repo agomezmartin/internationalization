@@ -46,4 +46,4 @@ urlpatterns = [
 ]
 ```
 
-This because the link is pointing to the **name attribute**.
+This is because the link is pointing to the **name attribute**.
