@@ -36,7 +36,7 @@ Page {{ number }} of {{ total }}
 ```
 Placeholders are created within the blocktranslate block, **before** the **equals sign**, then they are used as **variables** in the sentence itself.
 
-After executing the **makemessages** command, this example will be extracted to the language-specific PO file for translation:
+After executing the **makemessages** command, this example will be **extracted** to the language-specific PO file for translation:
 
 ``` PO
 msgid "Page %(number)s of %(total)s"
