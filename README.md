@@ -41,9 +41,6 @@ The repository will be updated on an ongoing basis.
 - [**04_Reversed URL Maps**](/assets/django/reversed_URL_maps/README.md)
 - [Django project example](/assets/_projects/django/WebSite_MODAL_FORM_DB_i18n/project/create_app/templates/index.html)
 
-
-Django best-practice VIEWS: generic class-based list and detail views (These can significantly reduce the amount of view code needed, making them easier to write and maintain)
-
 </details>
 <!-- ---------------------------------- -->
 <details>
