@@ -58,4 +58,17 @@ The repository will be updated on an ongoing basis.
 </details>
 <!-- ---------------------------------- -->
 
+<details>
+<summary><strong>Link to projects</strong></summary>
+
+- [Django: CRUD_and_i18n](/assets/_projects/django/CRUD_i18n)
+- [Django: DB_with_PARAM__and_i18n](/assets/_projects/django/DB_Param_i18n)
+- [Django: DB_with_Procedures_and_i18n](/assets/_projects/django/MySQLProcedures_i18n_gettext)
+- [Django: WebSite_MODAL_FORM_DB_i18n](/assets/_projects/django/WebSite_MODAL_FORM_DB_i18n)
+- [Django: Local Library](/assets/_projects/django/LocalLibrary)
+- [JAVA: ResourceBundle	](/assets/_projects/java)
+
+</details>
+<!-- ---------------------------------- -->
+
 <img src="https://github.com/agomezmartin/regexl10n/blob/main/assets/images/world_flags.gif">
