@@ -35,7 +35,8 @@ The repository will be updated on an ongoing basis.
 - [**01_Configuration**: basic. Gettext. (Extract and compile strings for translation)](/assets/django/README.md)
 - [**01_Configuration**: advanced. Gettext + Django settings.](/assets/django/advanced_config/README.md)
 - [**02_Templates**: mark strings for translation](/assets/django/templates_mark_for_translation/README.md)
-- [**02_Templates**: mark template expressions for translation](/assets/django/template_expressions/README.md)
+- [**02_Templates**: mark template expressions for translation](/assets/django/templates_mark_expressions_for_translation/README.md)
+- [**02_Templates**: marks plurals for translation](/assets/django/templates_mark_plurals_for_translation/README.md)
 - [**02_Templates**: extending templates](/assets/django/extending_templates/README.md)
 - [**02_Templates**: allowing users to Switch Languages](/assets/django/switch_languages/README.md)
 - [**03_Reversed URL Maps**](/assets/django/reversed_URL_maps/README.md)
@@ -46,7 +47,9 @@ The repository will be updated on an ongoing basis.
 <details>
 <summary><strong>JAVA</strong></summary>
 
-- [**ResourceBundle**: In progress...](/assets/java/resourceBundle/README.md)
+- [**Introduction to i18n in Java**: In progress...](/assets/java/introduction/README.md)
+
+- [**JAVA SE**: ResourceBundle and Locale Classes (To be done)](/assets/java/resourcebundle_and_locale/README.md)
 
 </details>
 <!-- ---------------------------------- -->
