@@ -19,7 +19,18 @@ Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}
 
 {% blocktranslate %}
 ```
-The example above will **NOT** work correctly just yet. It still needs further fine-tuning
+The example above will **NOT** work correctly just yet because blocktrabslate is unable to access the attributes.
+
+If we just wanted to access the one value from the context variable, the following would have been enough:
+``` HTML
+{% blocktranslate %}
+
+Page {{ page_obj }}
+
+{% blocktranslate %}
+```
+
+Our example still needs further fine-tuning
 
 ## Blocktranslate placeholders
 
