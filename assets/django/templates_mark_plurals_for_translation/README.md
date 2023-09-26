@@ -6,7 +6,7 @@ Because natural languages have each their specific pluralization rules, technolo
 
 The role of language-specific **linguists** in helping software developers create **pluralization rules** is sometimes overseen, but it is these subtle nuances that make a difference in multilingual software.
 
-## 1. Simple example of Pluralization
+## 1. Basic example of Pluralization
 ``` HTML
 <p>
   You have visited this page {{ num_visits }} time{{ num_visits|pluralize }}.
