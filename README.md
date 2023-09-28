@@ -71,6 +71,7 @@ The repository will be updated on an ongoing basis.
 - [Django: Local Library](/assets/_projects/django/LocalLibrary)
 - [JAVA SE: ResourceBundle	](/assets/_projects/java/i18n/)
 - [JAVA SE: Grades Manager	](/assets/_projects/java/Gestion_Notas_Service/)
+- [JAVA SE: Contacts agenda	](/assets/_projects/java/Agenda_Capas/)
 
 </details>
 <!-- ---------------------------------- -->
