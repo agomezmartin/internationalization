@@ -69,8 +69,8 @@ The repository will be updated on an ongoing basis.
 - [Django: DB_with_Procedures_and_i18n](/assets/_projects/django/MySQLProcedures_i18n_gettext)
 - [Django: WebSite_MODAL_FORM_DB_i18n](/assets/_projects/django/WebSite_MODAL_FORM_DB_i18n)
 - [Django: Local Library](/assets/_projects/django/LocalLibrary)
-- [JAVA: ResourceBundle	](/assets/_projects/java/i18n/)
-- [JAVA: Grades Manager	](/assets/_projects/java/Gestion_Notas_Service/)
+- [JAVA SE: ResourceBundle	](/assets/_projects/java/i18n/)
+- [JAVA SE: Grades Manager	](/assets/_projects/java/Gestion_Notas_Service/)
 
 </details>
 <!-- ---------------------------------- -->
