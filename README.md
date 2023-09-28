@@ -62,7 +62,7 @@ The repository will be updated on an ongoing basis.
 <!-- ---------------------------------- -->
 
 <details>
-<summary><strong>Link to projects</strong></summary>
+<summary><strong>Links to projects</strong></summary>
 
 - [Django: CRUD_and_i18n](/assets/_projects/django/CRUD_i18n)
 - [Django: DB_with_PARAM__and_i18n](/assets/_projects/django/DB_Param_i18n)
