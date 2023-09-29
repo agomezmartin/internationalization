@@ -153,7 +153,12 @@ public class Agenda {
 				System.out.println();
 				System.out.println("====================================");
 
-				System.out.println(service.mostrarContactos());
+//				System.out.println(service.mostrarContactos());
+/*				for (String dato:service.mostrarContactos()) {
+					System.out.println(dato);
+				};
+*/				
+				service.mostrarContactos().stream().forEach(c->System.out.println(c));
 
 				break;
 					
