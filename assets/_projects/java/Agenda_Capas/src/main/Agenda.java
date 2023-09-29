@@ -1,14 +1,13 @@
 package main;
 
 import java.text.MessageFormat;
-import java.util.ArrayList;
 import java.util.Locale;
 import java.util.ResourceBundle;
 import java.util.Scanner;
 
 import service.AgendasService;
 
-public class GestorNotas {
+public class Agenda {
 
 	/*
 	 * OBJETOS i18n
@@ -28,8 +27,7 @@ public class GestorNotas {
 	 * OBJETO Scanner
 	 */
 	static Scanner sc_menu = new Scanner(System.in);
-	static Scanner sc = new Scanner(System.in);
-	 
+	static Scanner sc = new Scanner(System.in);	 
 
 	 /*
 	 * OBJETO Service
@@ -37,7 +35,6 @@ public class GestorNotas {
 	static AgendasService service = new AgendasService();
 
 	public static void main(String[] args) {
-		
 		
 		/*
 		 * Menú:
@@ -50,12 +47,19 @@ public class GestorNotas {
 		 * 
 		 */
 		
+		agenda();
+		
+	} // cierre MAIN
+	
+	static public void agenda() {
+		
 		int opcion = 0;
 		double nota = 0;
-		ArrayList<Double> notas = new ArrayList<>();
 		
 		do {
-			System.out.println("=================");
+			System.out.println("====================================");
+
+			System.out.println();
 			mostrarMenu();
 			opcion = sc_menu.nextInt();
 
@@ -64,7 +68,8 @@ public class GestorNotas {
 				System.out.println();
 				System.out.println(bundle.getString("opcion.excepcion"));
 				System.out.println();
-				System.out.println("=================");
+				System.out.println("====================================");
+
 				mostrarMenu();
 				opcion = sc_menu.nextInt();
 				
@@ -80,10 +85,20 @@ public class GestorNotas {
 				String nombre = sc.nextLine();
 				
 				if(service.agregarContacto(email, nombre)) {
+					
+					System.out.println();
+					System.out.println("====================================");
+
 					System.out.println(bundle.getString("contacto.agregado"));
+				
 				} else {
+				
+					System.out.println();
+					System.out.println("====================================");
+
 					System.out.println(bundle.getString("contacto.ya.existe"));					
 				}
+
 				break;
 				
 			// eliminar nota
@@ -93,8 +108,17 @@ public class GestorNotas {
 				email = sc.nextLine();
 				
 				if(service.eliminarContacto(email)) {
+
+					System.out.println();
+					System.out.println("====================================");
+
 					System.out.println(bundle.getString("contacto.eliminado"));					
+
 				} else {
+					
+					System.out.println();
+					System.out.println("====================================");
+
 					System.out.println(bundle.getString("contacto.no.existe"));										
 				}
 
@@ -108,8 +132,16 @@ public class GestorNotas {
 				email = sc.nextLine();
 				
 				if (service.buscarContacto(email)!=null) {
+
+					System.out.println();
+					System.out.println("====================================");
+
 					System.out.println(service.buscarContacto(email) + ": " + email);
+
 				} else {
+					System.out.println();					
+					System.out.println("====================================");
+
 					System.out.println(bundle.getString("contacto.no.existe"));										
 				}
 
@@ -119,6 +151,8 @@ public class GestorNotas {
 			case 4:
 
 				System.out.println();
+				System.out.println("====================================");
+
 				System.out.println(service.mostrarContactos());
 
 				break;
@@ -126,18 +160,18 @@ public class GestorNotas {
 			} // cierre switch
 			
 		} while (opcion != 5);
-		
+
 		System.out.println();
 		System.out.println("====================================");
 		System.out.println(bundle.getString("salir"));
 		System.out.println("====================================");
-
-
-	} // /////////////////// cierre MAIN
+		
+	} // cierre AGENDA
 	
 	static public void mostrarMenu() {
-		System.out.println(bundle.getString("menu"));
-	}
 	
+		System.out.println(bundle.getString("menu"));
 
+	} // cierre MENÚ
+	
 }
