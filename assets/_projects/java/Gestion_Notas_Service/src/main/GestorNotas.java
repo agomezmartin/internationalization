@@ -2,6 +2,7 @@ package main;
 
 import java.text.MessageFormat;
 import java.util.ArrayList;
+import java.util.InputMismatchException;
 import java.util.Locale;
 import java.util.ResourceBundle;
 import java.util.Scanner;
@@ -51,40 +52,115 @@ public class GestorNotas {
 		
 		int opcion = 0;
 		double nota = 0;
+		
 		ArrayList<Double> notas = new ArrayList<>();
 		
 		do {
-			System.out.println("=================");
-			service.mostrarMenu();
-			opcion = sc.nextInt();
 
-			while(opcion<1 || opcion > 5) {
-
-				System.out.println();
-				System.out.println(bundle.getString("opcion.excepcion"));
-				System.out.println();
-				System.out.println("=================");
-				service.mostrarMenu();
-				opcion = sc.nextInt();
+			try {
 				
+				System.out.println("=====================================");
+				System.out.println();
+				
+				service.mostrarMenu();
+				
+				System.out.println();
+					
+				opcion = sc.nextInt();
+
+			} catch(InputMismatchException ex) {
+				
+				System.out.println("=====================================");
+				System.out.println(bundle.getString("opcion.excepcion"));
+				
+				service.mostrarMenu();
+				
+				System.out.println();
 			}
 
+			while(opcion < 1 || opcion > 5) {
+				
+				sc.nextLine(); // limpia el buffer
+				
+				System.out.println();
+				System.out.println("=====================================");
+				System.out.println(bundle.getString("opcion.excepcion"));
+				System.out.println("=====================================");
+				System.out.println();
+				
+				service.mostrarMenu();
+				
+				System.out.println();
+				
+				try {
+					
+					opcion = sc.nextInt();				
+
+				} catch(InputMismatchException ex) {
+					
+					System.out.println("=====================================");
+					System.out.println(bundle.getString("opcion.excepcion"));
+				}
+			
+			} // cierre while
+
 			switch(opcion) {
+			
 			// añadir nota
 			case 1:
-				System.out.println(bundle.getString("nota.agregar"));
-				nota = sc.nextDouble();
 				
-				while(nota<0 || nota> 10) {
-					System.out.println();
-					System.out.println(bundle.getString("nota.agregar.excepcion"));
+				// control de tipo de dato introducido por usuario
+				try {
+				
 					System.out.println();
 					System.out.println(bundle.getString("nota.agregar"));
+
 					nota = sc.nextDouble();
-				}
+
+				} catch(InputMismatchException ex) {
+
+					System.out.println("=====================================");
+					System.out.println(bundle.getString("nota.agregar.excepcion"));
+					
+					sc.nextLine();
+					
+					System.out.println();
+					System.out.println(bundle.getString("nota.agregar"));
+
+					nota = sc.nextDouble();
+					
+				} // cierre catch
+				
+					while(nota < 0 || nota > 10) {
+					
+					
+						System.out.println();
+						System.out.println(bundle.getString("nota.agregar.excepcion"));
+						System.out.println();
+						System.out.println(bundle.getString("nota.agregar"));
+						
+						try {
+							
+							nota = sc.nextDouble();
+
+						} catch(InputMismatchException ex) {
+							
+							System.out.println();
+							System.out.println(bundle.getString("nota.agregar.excepcion"));
+							System.out.println();
+							System.out.println(bundle.getString("nota.agregar"));
+							
+							sc.nextLine();
+
+							nota = sc.nextDouble();
+							
+						} // cierre catch
+
+				} // cierre while
 				
 				notas.add(nota);
-				System.out.println();
+				System.out.println("=====================================");
+				System.out.println(bundle.getString("nota.agregada"));
 				break;
 				
 			// eliminar nota
@@ -97,10 +173,18 @@ public class GestorNotas {
 					System.out.println();
 					System.out.println(bundle.getString("nota.eliminada"));
 				
-				} catch(Exception e) {
+				} catch(InputMismatchException ex) {
+				
 					System.out.println();
 					System.out.println(message.format(bundle.getString("nota.eliminar.excepcion"), (notas.size()-(notas.size())), notas.size()-1));
+				
+				} catch(Exception e) {
+					
+					System.out.println();
+					System.out.println(message.format(bundle.getString("nota.eliminar.excepcion"), (notas.size()-(notas.size())), notas.size()-1));
+
 				}
+
 				System.out.println();
 
 				
