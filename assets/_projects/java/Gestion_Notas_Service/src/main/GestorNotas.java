@@ -50,6 +50,11 @@ public class GestorNotas {
 		 * 
 		 */
 		
+		gestorNotas();
+
+	} // /////////////////// cierre MAIN
+	
+	public static void gestorNotas() {
 		int opcion = 0;
 		double nota = 0;
 		
@@ -217,8 +222,6 @@ public class GestorNotas {
 		System.out.println(bundle.getString("salir"));
 		System.out.println("====================================");
 
-
-	} // /////////////////// cierre MAIN
-	
+	}
 
 }
