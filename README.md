@@ -72,7 +72,7 @@ The repository will be updated on an ongoing basis.
 - [JAVA SE: ResourceBundle	](/assets/_projects/java/i18n/)
 - [JAVA SE: Exceptions and i18n	](/assets/_projects/java/Gestion_Notas_Service/)
 - [JAVA SE: Contacts agenda	](/assets/_projects/java/Agenda_Capas/)
-- [JAVA EE: Data Model, Maven, Lombok and i18n	](/assets/_projects/java/Agenda_Capas/)
+- [JAVA EE: Data Model, Maven, Lombok and i18n	](/assets/_projects/java/Ciudades_DataModel_Maven_Lombok_i18n/)
 
 </details>
 <!-- ---------------------------------- -->
