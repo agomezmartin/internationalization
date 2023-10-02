@@ -2,6 +2,7 @@ package main;
 
 import java.text.MessageFormat;
 import java.util.ArrayList;
+import java.util.InputMismatchException;
 import java.util.Locale;
 import java.util.ResourceBundle;
 import java.util.Scanner;
@@ -60,98 +61,105 @@ public class Ciudades {
 		int opcion = 0;
 		
 		do {
-			System.out.println("=================");
-			System.out.println();
-			System.out.println(bundle.getString("menu"));
-			opcion = sc.nextInt();
-
-			while(opcion<1 || opcion > 5) {
-
-				System.out.println();
-				System.out.println(bundle.getString("opcion.excepcion"));
-				System.out.println();
-				System.out.println("=================");
-				System.out.println(bundle.getString("menu"));
-				
-				try {
-					
-					opcion = sc.nextInt();
-				
-				} catch (Exception ex) {
-					
-					System.out.println("=================");
-					System.out.println(bundle.getString("opcion.error"));
-				}
-				
-			}
-
-			switch(opcion) {
 			
-			// añadir ciudad
-			case 1:
-				try {
-					System.out.println(bundle.getString("ciudad.agregar"));
-					String ciudad = sc_.nextLine();
+			try {
+				
+				System.out.println("=================");
+				System.out.println();
+				System.out.println(bundle.getString("menu"));
+				opcion = sc.nextInt();
 
-					System.out.println(bundle.getString("ciudad.agregar.poblacion"));
-					int poblacion = Integer.parseInt(sc_.nextLine());
-					
-					System.out.println(bundle.getString("ciudad.agregar.pais"));
-					String pais = sc_.nextLine();
+				while(opcion<1 || opcion > 5) {
 
-					service.agregarCiudad(ciudad, poblacion, pais);
 					System.out.println();
+					System.out.println(bundle.getString("opcion.excepcion"));
+					System.out.println();
+					System.out.println("=================");
+					System.out.println(bundle.getString("menu"));
+					
+					opcion = sc.nextInt();				
+					
+				}
 
-				}catch(Exception ex){
+				switch(opcion) {
+				
+				// añadir ciudad
+				case 1:
+						System.out.println(bundle.getString("ciudad.agregar"));
+						String ciudad = sc_.nextLine();
+
+						System.out.println(bundle.getString("ciudad.agregar.poblacion"));
+						int poblacion = Integer.parseInt(sc_.nextLine());
+						
+						System.out.println(bundle.getString("ciudad.agregar.pais"));
+						String pais = sc_.nextLine();
+
+						service.agregarCiudad(ciudad, poblacion, pais);
+						System.out.println();
+			
+					break;
+					
+				// mostrar ciudades según su país
+				case 2:
+
+					System.out.println(bundle.getString("insertar.pais"));
+					pais = sc_.nextLine();
 
 					System.out.println("=================");
-					System.out.println(bundle.getString("opcion.error"));
-
-				}
-				
-				break;
-				
-			// mostrar ciudades según su país
-			case 2:
-
-				System.out.println(bundle.getString("insertar.pais"));
-				String pais = sc_.nextLine();
-
-				System.out.println("=================");
-				service.ciudadPorPais(pais).stream()
-				.forEach(c->System.out.println(c.getNombre()));
-
-				break;
-					
-			// calcular nota media
-			case 3:
-
-				System.out.println(bundle.getString("insertar.pais"));
-				pais = sc_.nextLine();
-				System.out.println("=================");
-				System.out.println(bundle.getString("ciudad.mas.poblada") + service.mayorCiudad(pais));
-
-				break;
-					
-				// eliminar ciudad
-				case 4:
-
-					System.out.println();
-					System.out.println(bundle.getString("insertar.ciudad"));
-					pais = sc_.nextLine();
-					if(service.eliminarCiudad(pais)) {
-						System.out.println("=================");
-						System.out.println(bundle.getString("ciudad.eliminada"));
-					}else{
-						System.out.println("=================");
-						System.out.println(bundle.getString("ciudad.no.existe"));
-					};
-					System.out.println();
+					service.ciudadPorPais(pais).stream()
+					.forEach(c->System.out.println(c.getNombre()));
 
 					break;
 						
-			} // cierre switch
+				// calcular nota media
+				case 3:
+
+					System.out.println(bundle.getString("insertar.pais"));
+					pais = sc_.nextLine();
+					System.out.println("=================");
+					System.out.println(bundle.getString("ciudad.mas.poblada") + service.mayorCiudad(pais));
+
+					break;
+						
+					// eliminar ciudad
+					case 4:
+
+						System.out.println();
+						System.out.println(bundle.getString("insertar.ciudad"));
+						pais = sc_.nextLine();
+						if(service.eliminarCiudad(pais)) {
+							System.out.println("=================");
+							System.out.println(bundle.getString("ciudad.eliminada"));
+						}else{
+							System.out.println("=================");
+							System.out.println(bundle.getString("ciudad.no.existe"));
+						};
+						System.out.println();
+
+						break;
+						
+				} // cierre switch
+				
+				/*
+				 * CONTROL DE EXCEPCIONES
+				 */
+				
+			} catch(NumberFormatException ex){
+				System.out.println("=================");
+				System.out.println(bundle.getString("opcion.error"));
+
+			} catch (InputMismatchException ex) {
+				
+				System.out.println("=================");
+				System.out.println(bundle.getString("opcion.error"));
 			
+			} catch (Exception ex) {
+			
+			System.out.println("=================");
+			System.out.println(bundle.getString("opcion.error"));
+			ex.printStackTrace();
+		}
+
 		} while (opcion != 5);
 		
 		System.out.println();
