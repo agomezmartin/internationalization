@@ -13,7 +13,7 @@ The role of language-specific **linguists** in helping software developers creat
 </p>
 ```
 
-Depending on the **visit numbers**, the example above will produce:
+Depending on the **number of visits**, the example above will produce:
 
 - You have visited this page 1 time.
 - You have visited this page 2 times.
