@@ -2,4 +2,5 @@
 
 A **Locale** object represents a specific geographical, political, or cultural region.
 
-[Project example](https://github.com/agomezmartin/internationalization/blob/main/assets/_projects/java/src/Main.java)
+
+[JAVA EE: Hierchy, Currency, Data Model, Maven, Lombok and i18n	](/assets/_projects/java/BankAccount_Hierchy_Currency_i18n/)
