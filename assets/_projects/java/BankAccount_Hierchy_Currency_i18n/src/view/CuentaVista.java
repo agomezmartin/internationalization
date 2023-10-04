@@ -11,15 +11,16 @@ import service.CuentaMovimiento;
 
 public class CuentaVista {
 
+	/* ===============
+	 * OBJETOS i18n
+	 =============== */
+	static Locale locale = new Locale("es", "es");
+	static ResourceBundle bundle = ResourceBundle.getBundle("res.bundle", locale);
+//	Currency currentCurrency = Currency.getInstance(locale);
+	static NumberFormat currencyFormatter = NumberFormat.getCurrencyInstance(locale);
+	
+
 	public static void main(String[] args) {
-		
-		/* ===============
-		 * OBJETOS i18n
-		 =============== */
-		Locale locale = new Locale("es");
-		ResourceBundle bundle = ResourceBundle.getBundle("res.bundle", locale);
-//		Currency currentCurrency = Currency.getInstance(locale);
-		NumberFormat currencyFormatter = NumberFormat.getCurrencyInstance(locale);
 		
 		/* ===============
 		 * OBJETO Cuenta Bancaria
@@ -43,7 +44,12 @@ public class CuentaVista {
 		lista.stream()
 		.forEach(m->System.out.println(m.getTipo() + currencyFormatter.format(m.getCantidad())));
 		System.out.println("===============================");
-
+		
 	}
+	
+	static public Locale localePrincipal() {
 
+		return locale;
+	}
+	
 }

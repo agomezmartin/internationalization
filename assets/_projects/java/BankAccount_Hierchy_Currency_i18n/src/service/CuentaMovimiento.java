@@ -6,14 +6,17 @@ import java.util.Locale;
 import java.util.ResourceBundle;
 
 import model.Movimiento;
+import view.CuentaVista;
 
 public class CuentaMovimiento extends CuentaLimitada {
-
+	
+	CuentaVista cuentavista = new CuentaVista();
 
 	/* ===============
 	 * OBJETOS i18n
 	 =============== */
-	Locale locale = new Locale("es");
+//	Locale locale = new Locale("en", "us");
+	Locale locale = new Locale(cuentavista.localePrincipal().getLanguage(), cuentavista.localePrincipal().getCountry());
 	ResourceBundle bundle = ResourceBundle.getBundle("res.bundle", locale);
 
 
