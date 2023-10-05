@@ -4,7 +4,7 @@ The internatinoalization (i18n) approach in Java, as opposed to more recent tech
 
 While other programming languages have developed console-driven modules and plug-ins to handle specific parts of the i18n circle, Java requires implementing in our application code the language's "Internationalization API" classes.
 
-The following i18n aspects will be conveyed:
+J2SE i18n's API holds classes to handle:
 
 - [Text isolation (In progress)](/assets/java/text_isolation/README.md)
 - [Dates (To be done)](/assets/java/dates/README.md)
