@@ -47,9 +47,16 @@ The repository will be updated on an ongoing basis.
 <details>
 <summary><strong>JAVA</strong></summary>
 
-- [**Introduction to i18n in Java**: In progress...](/assets/java/introduction/README.md)
+- [**Introduction to i18n in Java**](/assets/java/introduction/README.md)
 
-- [**JAVA SE**: ResourceBundle and Locale Classes (To be done)](/assets/java/resourcebundle_and_locale/README.md)
+- [**JAVA SE**: Text isolation (In progress)](/assets/java/text_isolation/README.md)
+
+- [**JAVA SE**: Dates (To be done)](/assets/java/dates/README.md)
+
+- [**JAVA SE**: Currency (To be done)](/assets/java/currency/README.md)
+
+- [**JAVA SE**: Pluralization (To be done)](/assets/java/pluralization/README.md)
+
 
 </details>
 <!-- ---------------------------------- -->
