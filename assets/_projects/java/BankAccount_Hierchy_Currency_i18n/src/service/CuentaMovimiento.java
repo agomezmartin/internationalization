@@ -1,5 +1,6 @@
 package service;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
@@ -39,14 +40,14 @@ public class CuentaMovimiento extends CuentaLimitada {
 	public void extraer(double cantidad) {
 		// TODO Auto-generated method stub
 		super.extraer(cantidad);
-		listaMovimientos.add(new Movimiento(bundle.getString("tipo.extraccion"), cantidad));
+		listaMovimientos.add(new Movimiento(bundle.getString("tipo.extraccion"), cantidad, LocalDate.now()));
 	}
 
 	@Override
 	public void ingresar(double cantidad) {
 		// TODO Auto-generated method stub
 		super.ingresar(cantidad);
-		listaMovimientos.add(new Movimiento(bundle.getString("tipo.ingreso"), cantidad));
+		listaMovimientos.add(new Movimiento(bundle.getString("tipo.ingreso"), cantidad, LocalDate.now()));
 	}
 	
 	public List<Movimiento> listaMovimientos(){

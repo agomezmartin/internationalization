@@ -16,7 +16,7 @@ public class CuentaVista {
 	/* ===============
 	 * OBJETOS i18n
 	 =============== */
-	static Locale locale = new Locale("es", "es");
+	static Locale locale = new Locale("en", "gb");
 	static ResourceBundle bundle = ResourceBundle.getBundle("res.bundle", locale);
 	Currency currentCurrency = Currency.getInstance(locale);
 	static NumberFormat currencyFormatter = NumberFormat.getCurrencyInstance(locale);
@@ -44,14 +44,20 @@ public class CuentaVista {
 		 * 
 		 * 1. Ingresar
 		 * 2. Extraer
-		 * 3. Ver saldo y movimientos
-		 * 4. Salir
+		 * 3. Movimientos
+		 * 4. Ver saldo
+		 * 5. Salir
+		 * 
 		 * 
 		 =============== */
 		
 		operarCuenta();
 
 	}
+	
+	/* ===============
+	 * MÉTODOS
+	 =============== */
 	
 	// enviar LOCALE
 	static public Locale localePrincipal() {
@@ -88,6 +94,7 @@ public class CuentaVista {
 
 			switch (opcion) {
 			
+			// ingresar dinero
 			case 1:
 				System.out.println(bundle.getString("saldo.ingresar"));
 				cantidad = Double.parseDouble(sc.nextLine());
@@ -107,6 +114,7 @@ public class CuentaVista {
 				
 				break;
 			
+			// extraer dinero
 			case 2:
 				
 				System.out.println(bundle.getString("saldo.extraer"));
@@ -123,7 +131,7 @@ public class CuentaVista {
 					} else {
 						
 						System.out.println("===============================");
-						cuenta.extraer(cantidad);
+						cuenta.extraer(limite);
 						System.out.println(message.format(bundle.getString("saldo.extraccion.sobrepasada"), currencyFormatter.format(cantidad), currencyFormatter.format(limite)));
 						
 					}
@@ -137,20 +145,31 @@ public class CuentaVista {
 				
 				break;
 			
+			// lista de movimientos
 			case 3:
 				
 				
-				System.out.println("===============================");
-				System.out.println(bundle.getString("lista.movimientos"));
-				System.out.println("===============================");
-				
 				List<Movimiento> lista = cuenta.listaMovimientos();
+				
+				if(cuenta.listaMovimientos()==null || cuenta.listaMovimientos().size()==0 ) {
+
+					System.out.println("===============================");
+					System.out.println(bundle.getString("lista.no.movimientos"));
+
+				} else {
+
+					System.out.println("===============================");
+					System.out.println(bundle.getString("lista.movimientos"));
+					System.out.println("===============================");
+
+					lista.stream()
+					.forEach(m->System.out.println(m.getTipo() + currencyFormatter.format(m.getCantidad()) + ". " + m.getFecha()));
+					
+				}
 		 
-				lista.stream()
-				.forEach(m->System.out.println(m.getTipo() + currencyFormatter.format(m.getCantidad())));
-				
 				break;
-				
+			
+			// ver saldo
 			case 4:
 				System.out.println();
 				System.out.println("===============================");
