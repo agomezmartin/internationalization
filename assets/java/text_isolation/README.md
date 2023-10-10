@@ -84,4 +84,4 @@ System.out.println(message.format(bundle.getString("saldo.extraccion.sobrepasada
 MessageFormat example above works by calling a STRING, then as many variables as required.
 
 
-[JAVA EE: Hierchy, Currency, Data Model, Maven, Lombok and i18n	](/assets/_projects/java/BankAccount_Hierchy_Currency_i18n/)
+[JAVA EE: Inheritance, Currency, Data Model, Maven, Lombok and i18n	](/assets/_projects/java/BankAccount_Hierchy_Currency_i18n/)
