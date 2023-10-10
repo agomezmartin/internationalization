@@ -69,9 +69,9 @@ The **placeholders format** is increasing numbers enclosed in curly brackets as 
 These placeholders will later be handled by the MessageFormat class to dynamically insert the data.
 
 # 4. Mark source code to import strings
-Now that the content has been isolatined, all we need to do is call the strings using the objects we created in Step 2.
+Now that the content has been isolated, all we need to do is call the strings using the objects we created in Step 2.
 
-Java's API provides two appraches depeding on our needs:
+We can alternate both ResourceBundle and MessageFormat objects as per our needs:
 
 - ResourceBundle alone if we **do not** need to include dynamic content:
 ``` Properties
