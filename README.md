@@ -71,7 +71,6 @@ The repository will be updated on an ongoing basis.
 - [Django: DB_with_Procedures_and_i18n](/assets/_projects/django/MySQLProcedures_i18n_gettext)
 - [Django: WebSite_MODAL_FORM_DB_i18n](/assets/_projects/django/WebSite_MODAL_FORM_DB_i18n)
 - [Django: Local Library](/assets/_projects/django/LocalLibrary)
-- [JAVA SE: ResourceBundle	](/assets/_projects/java/i18n/)
 - [JAVA SE: Exceptions and i18n	](/assets/_projects/java/Gestion_Notas_Service/)
 - [JAVA SE: Contacts agenda	](/assets/_projects/java/Agenda_Capas/)
 - [JAVA EE: Exceptions, Data Model, Maven, Lombok and i18n	](/assets/_projects/java/Ciudades_DataModel_Maven_Lombok_i18n/)
