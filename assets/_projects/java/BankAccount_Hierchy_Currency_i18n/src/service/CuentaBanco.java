@@ -3,6 +3,10 @@ package service;
 public class CuentaBanco {
 	
 	private double saldo;
+	
+	/* ===============
+	 * 	Constructores
+	 =============== */
 
 	public CuentaBanco () {
 		
@@ -10,6 +14,11 @@ public class CuentaBanco {
 	public CuentaBanco(double saldo) {
 		this.saldo = saldo;
 	}	
+
+	/* ===============
+	 * 	Métodos
+	 =============== */
+
 	public double consultarSaldo() {
 		return this.saldo;
 	}
