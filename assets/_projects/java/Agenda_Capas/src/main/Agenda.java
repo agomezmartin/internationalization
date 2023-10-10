@@ -37,12 +37,14 @@ public class Agenda {
 	public static void main(String[] args) {
 		
 		/*
-		 * Menú:
+		 * Menú
 		 * 
-		 * 1. Añadir nota
-		 * 2. Eliminar nota
-		 * 3. Calcular media
-		 * 4. Nota más alta
+		 * Elija una opción:
+		 * 
+		 * 1. Añadir un contacto
+		 * 2. Eliminar un contacto
+		 * 3. Buscar un contacto
+		 * 4. Mostrar los nombres de todos los contactosn
 		 * 5. Salir
 		 * 
 		 */
