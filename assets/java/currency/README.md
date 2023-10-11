@@ -56,6 +56,5 @@ NumberFormat applies Spain's currency symbol this time placing it after the figu
 Example project: [JAVA EE: Inheritance, Currency, Data Model, Maven, Lombok and i18n	](/assets/_projects/java/BankAccount_Hierchy_Currency_i18n/)
 
 
-
 Next: [Locale-specific **dates**](/assets/java/dates/README.md/)
 
