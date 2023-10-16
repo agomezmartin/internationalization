@@ -36,7 +36,7 @@ After compilation, Django _templating language_ will extend repeated sections an
 <!-- The template tag below links this page's content into the base_generic template -->
 {% extends "base_generic.html" %}
 
-<!-- The template tag below links sends its content into the base_generic template -->
+<!-- The template tag below sends its content into the base_generic template -->
 {% block content %}
   <h1>This is the CONTENT header</h1>
   <p>This CONTENT will be inserted in the block content of the base_generic template.</p>
