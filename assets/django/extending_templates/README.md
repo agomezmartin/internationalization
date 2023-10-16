@@ -8,24 +8,33 @@ Also, extended templates help **Gettext** to extract, translate and compile cont
 
 After compilation, Django _templating language_ will extend repeated sections and replace just the bits that are different for each specific page.
 
+HTML comments below explain how _templating language_ is used in Django:
 
 ## Create a _Base Generic_ template
 
 ``` HTML
+<!-- The template tag BLOCK is used to mark the different sections that will be replicated throughout the site. Each BLOCK receives a unique name to use as an id  -->
+<!-- Sections that will have content inserted from other pages need to be left EMPTY -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
     {% block title %}
       <title>Page title</title>
     {% endblock %}
+  
   </head>
+  
   <body>
+  
     {% block sidebar %}
       <!-- insert default navigation text for every page -->
     {% endblock %}
+  
     {% block content %}
       <!-- default content text (normally empty) -->
     {% endblock %}
+
   </body>
 </html>
 ```
@@ -38,9 +47,12 @@ After compilation, Django _templating language_ will extend repeated sections an
 
 <!-- The template tag below sends its content into the base_generic template -->
 {% block content %}
+
   <h1>This is the CONTENT header</h1>
+
   <p>This CONTENT will be inserted in the block content of the base_generic template.</p>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
 {% endblock %}
 ```
 
