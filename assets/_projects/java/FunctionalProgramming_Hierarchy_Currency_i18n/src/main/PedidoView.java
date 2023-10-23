@@ -4,12 +4,10 @@ import java.text.MessageFormat;
 import java.text.NumberFormat;
 import java.util.Currency;
 import java.util.InputMismatchException;
-import java.util.List;
 import java.util.Locale;
 import java.util.ResourceBundle;
 import java.util.Scanner;
 
-import model.Pedido;
 import service.PedidosService;
 
 public class PedidoView {
@@ -96,7 +94,7 @@ public class PedidoView {
 
 					System.out.println(bundle.getString("insertar.precio"));
 					double precio = Double.parseDouble(sc.nextLine());
-
+					
 					if(service.agregarPedido(producto, fechaPedido, precio)) {
 						System.out.println("===============================");
 						System.out.println(bundle.getString("pedido.agregado"));
@@ -106,7 +104,7 @@ public class PedidoView {
 					}
 						
 					break;
-					
+/*					
 				// 2. mostrar el producto más reciente
 				case 2:
 
@@ -149,7 +147,7 @@ public class PedidoView {
 						bundle.getString("fecha") + p.getFechapedido()));
 						
 						break;
-
+*/
 				} // cierre switch
 
 			} catch(InputMismatchException ex) {
