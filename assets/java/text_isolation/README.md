@@ -26,7 +26,7 @@ and save it in a RES folder.
 
 # 2. Import and create objects for all three classes
 
-Create the objects in the order above as both ResourceBundle and MessageFormat will need to read Locale's language.
+Create the objects in the order below as both ResourceBundle and MessageFormat will need to read Locale's language.
 ``` Java
 import java.text.MessageFormat;
 import java.util.Locale;
@@ -40,8 +40,8 @@ MessageFormat message = new MessageFormat("");
 
 ```
 # 3. Populate .properties file
-Your Java program will extract strings from this file using the key as an id.
-The example below displays keys in red, values after the equals sign in black: 
+Your Java program will extract strings from this file using the **key** as an id.
+The example below displays **keys** in red, and **values** (after the equal signs) in black: 
 ``` Properties
 saldo=Please, provide you bank account funds: 
 saldo.actual=Your bank account funds: {0}
@@ -58,13 +58,13 @@ lista.no.movimientos=No transactions available
 cuenta.salida=Thanks for using our online banking app.
 ```
 
-Populate your .properties file in order to contain all of your applications strings.
+**Populate** your .properties file for it to contain **all of your application strings**.
 
-Any dynamic content that needs to be embeeded in a string can be referenced by using placeholders.
-The **placeholders format** is increasing numbers enclosed in curly brackets as shown above and below:
+Any dynamic content that needs to be embeeded in a string can be referenced by using **placeholders**.
+The **placeholders format** within the values is increasing numbers enclosed in curly brackets as shown above and below:
 
-- Your bank account funds: {0}
-- {0} exceeds your pay out limit. {1} has been paid out.
+- Your bank account funds: **{0}**
+- **{0}** exceeds your pay out limit. **{1}** has been paid out.
 
 These placeholders will later be handled by the MessageFormat class to dynamically insert the data.
 
