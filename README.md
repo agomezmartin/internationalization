@@ -74,8 +74,8 @@ The repository will be updated on an ongoing basis.
 - [JAVA SE: Exceptions and i18n	](/assets/_projects/java/Gestion_Notas_Service/)
 - [JAVA SE: Contacts agenda	](/assets/_projects/java/Agenda_Capas/)
 - [JAVA EE: Exceptions, Data Model, Maven, Lombok and i18n	](/assets/_projects/java/Ciudades_DataModel_Maven_Lombok_i18n/)
-- [JAVA EE: Inheritance, Currency, Data Model, Maven, Lombok and i18n	](/assets/_projects/java/BankAccount_Hierchy_Currency_i18n/)
-- [JAVA EE: Functional programming, read/write files, inheritance, Currency, Data Model, Maven, Lombok and i18n	](/assets/_projects/java/FunctionalProgramming_Hierarchy_Currency_i18n/)
+- [JAVA EE: Inheritance, Currency, Data Model, Maven, Lombok and i18n	](/assets/_projects/java/BankAccount_Hierarchy_Currency_i18n/)
+- [JAVA EE: Functional programming, read/write files, inheritance, Currency, Data Model, Maven, Lombok and i18n	](/assets/_projects/java/FunctionalProgramming_Files_Hierarchy_Currency_i18n/)
 
 </details>
 <!-- ---------------------------------- -->
