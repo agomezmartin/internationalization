@@ -68,14 +68,19 @@ displayrequest()
 ## 4. Create POT template
 
 GETTEXT utilizes a **POT template file** from which language-specific PO files are generated.
+The **POT template file** is generated executing file "pygettext.py" just above the **locales** folder.
 
-The **POT template file** is generated executing file "pygettext.py" just above the **locales** folder:
+## Extra single file content
 
 ``` Commandline
-$   //Library/Frameworks/Python.framework/Versions/3.7/share/doc/python3.7/examples/Tools/i18n/pygettext.py -d base -o locales/base.pot [file containing strings].py
+$   //Library/Frameworks/Python.framework/Versions/3.12/share/doc/python3.12/examples/Tools/i18n/pygettext.py -d base -o locales/base.pot [file containing strings].py
+```
+## Extra all files content
+
+``` Commandline
+$   //Library/Frameworks/Python.framework/Versions/3.12/share/doc/python3.12/examples/Tools/i18n/pygettext.py --extract-all -d base -o locales/base.pot [path to directory]
 ```
 <img src="https://github.com/agomezmartin/regexl10n/blob/main/assets/images/gettext_folder_structure_2.png">
-
 
 ## 5. Create language-specific PO files
 
