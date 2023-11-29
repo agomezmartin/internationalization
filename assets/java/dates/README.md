@@ -6,3 +6,5 @@ The DateFormat class provides predefined formatting styles that are locale-speci
 Project example:
 
 [JAVA EE: Hiarchy, Currency, Data Model, Maven, Lombok and i18n	](/assets/_projects/java/BankAccount_Hierchy_Currency_i18n/)
+
+Next: [**Pluralization**](/assets/java/pluralization/README.md/)

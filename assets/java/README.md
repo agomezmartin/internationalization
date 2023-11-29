@@ -6,9 +6,9 @@ While other programming languages have developed console-driven modules and plug
 
 J2SE i18n's API holds classes to handle:
 
-- [Text isolation (In progress)](/assets/java/text_isolation/README.md)
+- [Text isolation](/assets/java/text_isolation/README.md)
+- [Currency](/assets/java/currency/README.md)
 - [Dates (To be done)](/assets/java/dates/README.md)
-- [Currency (To be done)](/assets/java/currency/README.md)
 - [Pluralization (To be done)](/assets/java/pluralization/README.md)
 
 
