@@ -14,4 +14,4 @@ J2SE i18n's API holds classes to handle:
 
 Project example:
 
-[JAVA EE: Hierchy, Currency, Data Model, Maven, Lombok and i18n	](/assets/_projects/java/BankAccount_Hierchy_Currency_i18n/)
+[JAVA EE: Hierchy, Currency, Data Model, Maven, Lombok and i18n	](\assets\_projects\java\BankAccount_Hierarchy_Currency_i18n\)
