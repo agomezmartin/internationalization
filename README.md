@@ -78,6 +78,6 @@ The repository will be updated on an ongoing basis.
 - [JAVA EE: Functional programming, read/write files, inheritance, Currency, Data Model, Maven, Lombok and i18n	](/assets/_projects/java/FunctionalProgramming_Files_Hierarchy_Currency_i18n/)
 
 </details>
-<!-- ---------------------------------- -->
+<!-- -------------------------------------- -->
 
 <img src="https://github.com/agomezmartin/regexl10n/blob/main/assets/images/world_flags.gif">
